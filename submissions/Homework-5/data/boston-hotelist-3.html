@@ -23,13 +23,13 @@ ta.util.error.record(error, 'error post load:: ' + msg, null, {'error_script': u
 <script type="text/javascript">
 </script>
 <meta http-equiv="imagetoolbar" content="no"/>
-<title>Hotels in Boston | Compare 77 Boston Hotels | 81,187 Reviews and Photos | TripAdvisor</title>
+<title>Hotels in Boston | Compare 77 Boston Hotels | 81,209 Reviews and Photos | TripAdvisor</title>
 <meta http-equiv="pragma" content="no-cache"/>
 <meta http-equiv="cache-control" content="no-cache,must-revalidate"/>
 <meta http-equiv="expires" content="0"/>
 <meta property="og:image" content="http://e2.tacdn.com/img2/postimg.jpg" height="150px" width="150px"/>
 <meta name="keywords" content="Boston, Massachusetts, Boston Hotels, inn, bed and breakfast, resort, lodging, vacation, offers, Boston packages, Boston vacation, motel, inn, bed and breakfast, resort, lodging, accommodation, recommendations, recommended, hotel, hotels, vacation, reviews, advice, guidebook, travel, package, packages, vacation, vacations"/>
-<meta name="description" content="Hotels in Boston on TripAdvisor: Find 81,187 traveler reviews, 27,733 candid photos, and prices for 77 Boston hotels"/>
+<meta name="description" content="Hotels in Boston on TripAdvisor: Find 81,209 traveler reviews, 27,733 candid photos, and prices for 77 Boston hotels"/>
 <link rel="alternate" hreflang="en" href="http://www.tripadvisor.com/Hotels-g60745-oa60-Boston_Massachusetts-Hotels.html"/>
 <link rel="alternate" hreflang="en-GB" href="http://www.tripadvisor.co.uk/Hotels-g60745-oa60-Boston_Massachusetts-Hotels.html"/>
 <link rel="alternate" hreflang="en-CA" href="http://www.tripadvisor.ca/Hotels-g60745-oa60-Boston_Massachusetts-Hotels.html"/>
@@ -77,7 +77,168 @@ ta.util.error.record(error, 'error post load:: ' + msg, null, {'error_script': u
 <link rel="alternate" hreflang="zh-Hant" href="http://www.tripadvisor.com.tw/Hotels-g60745-oa60-Boston_Massachusetts-Hotels.html"/>
 <link rel='stylesheet' type='text/css' media='screen, print' href='http://e2.tacdn.com/css2/meta_hotels_2014-v23494842903a.css'/>
 <link rel='stylesheet' type='text/css' media='screen, print' href='http://e2.tacdn.com/css2/meta_hotels_2014_2-v2283681083a.css'/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="http://e2.tacdn.com/css2/hotels_list_drawers-v21211598595a.css"/>
 <link rel="stylesheet" type="text/css" media="screen, print" href="http://e2.tacdn.com/css2/modules/persistent_date_picker-v23736496296a.css"/>
+<style type="text/css"><!--
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_drawer_wrapper {
+position: relative;
+-webkit-box-shadow: inset 0px 10px 10px -10px #CCC;
+-moz-box-shadow: inset 0px 10px 10px -10px #CCC;
+box-shadow: inset 0px 10px 10px -10px #CCC;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_bar {
+position: absolute;
+top: -32px;
+left: 185px;
+padding: 0;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_bar_tab {
+padding: 5px 20px 12px 10px;
+color: #069;
+cursor: pointer;
+float: left;
+position: relative;
+border: 1px solid transparent;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_bar_tab.selected_tab {
+color: black;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_bar_tab > span {
+color: #797979;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_divider {
+border-right: 1px solid #e6e5e0;
+height: 10px;
+position: absolute;
+top: 7px;
+left: 0px;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_bar_tab:first-child {
+padding-left: 5px;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_bar_tab:first-child .tab_divider,
+DIV.prw_rup.prw_hotels_tabs_drawer .selected_tab .tab_divider,
+DIV.prw_rup.prw_hotels_tabs_drawer .selected_tab + .tab_bar_tab .tab_divider {
+display: none;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_drawer {
+height: 0;
+overflow: hidden;
+position: relative;
+-webkit-transition: height 200ms linear;
+-moz-transition: height 200ms linear;
+-ms-transition: height 200ms linear;
+transition: height 200ms linear;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_drawer > div {
+position: absolute;
+bottom: 40px;
+width: 100%;
+box-sizing: border-box;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .placement_loading .tab_drawer {
+height: 40px;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .drawer_loading {
+position: absolute;
+left: 50%;
+margin-left: -18px;
+top: 50%;
+margin-top: -4px;
+filter: alpha(opacity = 0); /* IE 8 */
+opacity: 0;
+-webkit-transition: opacity 200ms linear;
+-moz-transition: opacity 200ms linear;
+-ms-transition: opacity 200ms linear;
+transition: opacity 200ms linear;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .placement_loading .drawer_loading {
+filter: alpha(opacity = 100); /* IE 8 */
+opacity: 1;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .drawer_footer {
+height: 4px;
+width: 100%;
+background: #7f7f7f;
+position: absolute;
+bottom: 0px;
+opacity: 0;
+z-index: -1;
+-webkit-transition: opacity 200ms linear;
+-moz-transition: opacity 200ms linear;
+-ms-transition: opacity 200ms linear;
+transition: opacity 200ms linear;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .collapse_button {
+position: absolute;
+bottom: 4px;
+right: 50%;
+margin-right: -19px;
+width: 38px;
+height: 38px;
+background: #7f7f7f;
+cursor: pointer;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .collapse_button .arrow {
+margin-top: 2px;
+margin-left: 9px;
+height: 20px;
+width: 20px;
+position: absolute;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .open_tab .drawer_footer {
+opacity: 1;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .open_tab .drawer_footer,
+DIV.prw_rup.prw_hotels_tabs_drawer .closing .drawer_footer {
+z-index: 0;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_expand_arrow {
+position: absolute;
+right: 7px;
+top: 11px;
+background: #FFF;
+border: 4px solid #069;
+border-color: #069 transparent transparent;
+-webkit-transition: -webkit-transform 200ms ease-in-out;
+-moz-transition: -moz-transform 200ms ease-in-out;
+-ms-transition: -ms-transform 200ms ease-in-out;
+transition: transform 200ms ease-in-out;
+-webkit-transform-origin: 50% 2px;
+-moz-transform-origin: 50% 2px;
+-ms-transform-origin: 50% 2px;
+transform-origin: 50% 2px;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .tab_expand_arrow:after {
+content: '';
+display: inline-block;
+border: 2px solid #fff;
+border-color: #fff transparent transparent;
+position: absolute;
+left: -2px;
+top: -4px;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .selected_tab {
+border: 1px solid #e6e5e0;
+border-radius: 4px 4px 0 0;
+background-color: white;
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .selected_tab .tab_expand_arrow {
+-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+transform: rotate(180deg);
+}
+DIV.prw_rup.prw_hotels_tabs_drawer .selected_tab:after {
+position: absolute;
+background: white;
+width: 100%;
+height: 10px;
+content: '';
+display: block;
+left: 0;
+bottom: -10px;
+}--></style>
 <style type="text/css">
 body{}
 #ALSO_VIEWED_LIST li.lodging {
@@ -880,7 +1041,7 @@ Write a Review <div id="WAR_NOTIFICATION_FLAG" class="lsJewelCounter">
 <div class="warLoc subItem" onclick="ta.setEvtCookie('WAR', 'WAR_PROJECT_GLOBAL_NAV_DROP_DOWN', 'PICK_ANOTHER_POI', '39392', '/UserReviewRedesign');ta.util.cookie.setPIDCookie(39392);location.href='https://www.tripadvisor.com/UserReview-e__2F__Hotels__2D__g60745__2D__oa60__2D__Boston__5F__Massachusetts__2D__Hotels__2E__html'">
 <div class="warLocImg">
 <div class="nophoto thumbNail">
-<img id='lazyload_-575606663_0' class='lodge' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_0' class='lodge' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <div class="warLocDetail">
@@ -935,7 +1096,7 @@ Review a place you’ve visited </span>
 </div>
 <div class="easyClear"></div>
 </div>
-<div class="bg_reset special_offer_header checkbox_short_cells">
+<div class="bg_reset with_sponsorship special_offer_header checkbox_short_cells">
 <!--trkP:hotels_checkbox_filter_header-->
 <!-- PLACEMENT hotels_checkbox_filter_header -->
 <DIV ID="taplc_hotels_checkbox_filter_header_0" class="ppr_rup ppr_priv_hotels_checkbox_filter_header">
@@ -943,6 +1104,13 @@ Review a place you’ve visited </span>
 <div id="BIG_MAP" class="big_map pointer " onmouseover="ta.call('ta.mapsv2.Factory.fadeOnEventOverElementOverlay', event, 'BIG_MAP_OVERLAY');" onmouseout="ta.call('ta.mapsv2.Factory.fadeOnEventOutElementOverlay', event, 'BIG_MAP_OVERLAY');" onclick="ta.call('ta.mapsv2.Factory.createPOIMapViaHashRedirect', event, this, null); ta.trackEventOnPage('big_map_hotels', 'open', 'map');">
 <div id="BIG_MAP_IMG"></div>
 <div id="BIG_MAP_OVERLAY"></div>
+</div>
+<div class="floating_sponsor_wrapper">
+<div class="floating_sponsor">
+<span>Map sponsored by</span> <div class="sponsor_icon bstWst"></div>
+<img id='lazyload_162788109_1' class='tracking' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_2' class='tracking' src='http://e2.tacdn.com/img2/x.gif'/>
+</div>
 </div>
 </div>
 <style type="text/css">
@@ -983,39 +1151,11 @@ Hotels in Boston
 </div> </div>
 <div class="jfy_header_dates_holder">
 <div id="STATIC_DATE_PICKER_BAR" class="metaDatePicker  moreProminent ">
-<div class="stayInfoHeaderDateTrigger outDateTrigger" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '', false,                     ta.servlet.HACSearch.doMetaDateSearch
-); ta.widgets.calendar.syncAllDatePickers();"></div>
-<div class="stayInfoHeader inDateTrigger  hotels   hidden " onclick=" ta.store('multiDP.trackString', 'CHANGE_CRITERIA'); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '', false,                     ta.servlet.HACSearch.doMetaDateSearch
-); ta.widgets.calendar.syncAllDatePickers(); event.stopPropagation();">
-<span class="bestPricesMsg">
-Best prices for <span class="dateHeader inDate"></span> - <span class="dateHeader outDate"></span> </span>
-<div class="roomOptions">
-<div class="stayInfoContainer nights ">
-<div class="stayInfoIcon sprite-date_picker-nights-green"></div>
-<div class="stayInfoLabel singular"><span class="grp-nights-value" id="grp-nights-value">1</span> night</div> <div class="stayInfoLabel plural">
-<span class="grp-nights-value" id="grp-nights-value">2</span> nights
-</div>
-</div>
-<div class="stayInfoContainer rooms ">
-<div class="stayInfoIcon sprite-date_picker-rooms-green"></div>
-<div class="stayInfoLabel singular"><span class="grp-rooms-value" id="grp-rooms-value">1</span> room</div> <div class="stayInfoLabel plural">
-<span class="grp-rooms-value" id="grp-rooms-value">2</span> rooms
-</div>
-</div>
-<div class="stayInfoContainer guests ">
-<div class="stayInfoIcon sprite-date_picker-guests-green"></div>
-<div class="stayInfoLabel singular"><span class="grp-guests-value" id="grp-guests-value">1</span> guest</div> <div class="stayInfoLabel plural">
-<span class="grp-guests-value" id="grp-guests-value">2</span> guests
-</div>
-</div>
-</div>
-<div class="changeStayInfoButton en changeDates sprite-change-dates-button-yellow" onclick="ta.store('multiDP.trackString', 'CHANGE_CRITERIA'); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '', false,                     ta.servlet.HACSearch.doMetaDateSearch
-); ta.widgets.calendar.syncAllDatePickers(); event.stopPropagation();">Change dates</div> <div class="changeStayInfoButton en sprite-gradient1x27_gry" onclick="ta.store('meta.session_isLessThan24Hours', true);ta.call('ta.p13n.wizard.hideAvailabilitySort', event, this);ta.store('changeRankWithoutDate',true);ta.hac.filters.clearDatesAndUpdateResults();ta.call('ta.p13n.wizard.checkPricesVisibility', event); ta.call('ta.p13n.wizard.closeCalendarFilter',event, this, true); ta.trk('clear_dates', false, this); event.stopPropagation();">Clear dates</div> </div>
 <div class="date_control_wrapper ">
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '60745', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_60745" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_ ">
 Check In
 </span>
@@ -1025,7 +1165,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '60745', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_60745" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_ ">
 Check Out
 </span>
@@ -1064,7 +1204,7 @@ View all </a>
     window.open(url);
   ">
 <div class="sizedThumb" style="height: 50px; width: 50px">
-<img id='lazyload_-575606663_1' height='50' style='height: 50px; width: 50px;' alt='enVision Hotel Boston' width='50' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_3' height='50' style='height: 50px; width: 50px;' alt='enVision Hotel Boston' width='50' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <div class="so_details">
@@ -1102,7 +1242,7 @@ Choice Privileges Points </span>
     window.open(url);
   ">
 <div class="sizedThumb" style="height: 50px; width: 50px">
-<img id='lazyload_-575606663_2' height='50' style='height: 50px; width: 50px;' alt='The Fairmont Copley Plaza, Boston' width='50' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_4' height='50' style='height: 50px; width: 50px;' alt='The Fairmont Copley Plaza, Boston' width='50' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <div class="so_details">
@@ -1133,41 +1273,41 @@ The Fairmont Copley...
 </div>
 </div>
 <div class="so_listing ">
-<div class="so_thumbnail" onclick="    var url = '/Hotel_Review-g60745-d111423-Reviews-Eliot_Hotel-Boston_Massachusetts.html';
+<div class="so_thumbnail" onclick="    var url = '/Hotel_Review-g60745-d777353-Reviews-Aisling_Bed_and_Breakfast-Boston_Massachusetts.html';
     ta.setEvtCookie(          'Hotels'
-  ,'BL_SO_WIDGET|text|3|||FREE_BREAKFAST', '111423|337469|', 0, url);
-    ta.servlet.blcoupons.couponAnnouncementViewWithOpen('viewcoupon', '337469', null, '111423', 'http://e2.tacdn.com/css2/pages/coupon-v23605967338a.css', 3710, null, null, false, url);
+  ,'BL_SO_WIDGET|text|3|||ROOM_AMOUNT_OFF', '777353|1136354|', 0, url);
+    ta.servlet.blcoupons.couponAnnouncementViewWithOpen('viewcoupon', '1136354', null, '777353', 'http://e2.tacdn.com/css2/pages/coupon-v23605967338a.css', 3710, null, null, false, url);
     window.open(url);
   ">
 <div class="sizedThumb" style="height: 50px; width: 50px">
-<img id='lazyload_-575606663_3' height='50' style='height: 50px; width: 50px;' alt='Eliot Hotel' width='50' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_5' height='50' style='height: 50px; width: 50px;' alt='Aisling Bed and Breakfast' width='50' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <div class="so_details">
 <div class="so_name_wrap">
-<span class="so_name b taLnk" onclick="    var url = '/Hotel_Review-g60745-d111423-Reviews-Eliot_Hotel-Boston_Massachusetts.html';
+<span class="so_name b taLnk" onclick="    var url = '/Hotel_Review-g60745-d777353-Reviews-Aisling_Bed_and_Breakfast-Boston_Massachusetts.html';
     ta.setEvtCookie(          'Hotels'
-  ,'BL_SO_WIDGET|text|3|||FREE_BREAKFAST', '111423|337469|', 0, url);
-    ta.servlet.blcoupons.couponAnnouncementViewWithOpen('viewcoupon', '337469', null, '111423', 'http://e2.tacdn.com/css2/pages/coupon-v23605967338a.css', 3710, null, null, false, url);
+  ,'BL_SO_WIDGET|text|3|||ROOM_AMOUNT_OFF', '777353|1136354|', 0, url);
+    ta.servlet.blcoupons.couponAnnouncementViewWithOpen('viewcoupon', '1136354', null, '777353', 'http://e2.tacdn.com/css2/pages/coupon-v23605967338a.css', 3710, null, null, false, url);
     window.open(url);
   ">
-Eliot Hotel
+Aisling Bed and Brea...
 </span>
 </div>
 <div class="so_rating">
-<span class="rate rate_ss ss45">
-<img class="sprite-ratings" src="http://e2.tacdn.com/img2/x.gif" alt="4.5 of 5 stars">
+<span class="rate rate_ss ss50">
+<img class="sprite-ratings" src="http://e2.tacdn.com/img2/x.gif" alt="5.0 of 5 stars">
 </span>
 <span class="so_reviews">
-746 Reviews </span>
+262 Reviews </span>
 </div>
-<span class="coupon_description taLnk" onclick="    var url = '/Hotel_Review-g60745-d111423-Reviews-Eliot_Hotel-Boston_Massachusetts.html';
+<span class="coupon_description taLnk" onclick="    var url = '/Hotel_Review-g60745-d777353-Reviews-Aisling_Bed_and_Breakfast-Boston_Massachusetts.html';
     ta.setEvtCookie(          'Hotels'
-  ,'BL_SO_WIDGET|text|3|||FREE_BREAKFAST', '111423|337469|', 0, url);
-    ta.servlet.blcoupons.couponAnnouncementViewWithOpen('viewcoupon', '337469', null, '111423', 'http://e2.tacdn.com/css2/pages/coupon-v23605967338a.css', 3710, null, null, false, url);
+  ,'BL_SO_WIDGET|text|3|||ROOM_AMOUNT_OFF', '777353|1136354|', 0, url);
+    ta.servlet.blcoupons.couponAnnouncementViewWithOpen('viewcoupon', '1136354', null, '777353', 'http://e2.tacdn.com/css2/pages/coupon-v23605967338a.css', 3710, null, null, false, url);
     window.open(url);
   ">
-Complimentary Breakfast </span>
+$25 off room rate </span>
 </div>
 </div>
 </div>
@@ -2943,7 +3083,7 @@ Things to Do
 <div class="spinner-centering-wrap">
 <div class="updating_map">
 <div class="updating_wrapper">
-<img id='lazyload_-575606663_4' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_6' src='http://e2.tacdn.com/img2/x.gif'/>
 <span class="updating_text">Updating Map...</span> </div>
 </div>
 </div>
@@ -2960,7 +3100,7 @@ Thank you for your interest.<br/>This feature is coming soon. </div>
 <div class="price_filter_calendar hidden">
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
-<span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '60745', '_pricefilter', ta.mapsv2.FiltersMapCard.dateSelectedCallback );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+<span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '60745', '_pricefilter', ta.mapsv2.FiltersMapCard.dateSelectedCallback );" data-in="true">
 <span id="date_picker_in_60745_pricefilter" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_ ">
 Check In
 </span>
@@ -2969,7 +3109,7 @@ Check In
 <span class="smallPointingTriangle"> <img class="rightPointing" src="http://e2.tacdn.com/img2/meta_sprites/triangle2.gif" alt="">
 </span>
 <span class="meta_date_field   check_out  ">
-<span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '60745', '_pricefilter', ta.mapsv2.FiltersMapCard.dateSelectedCallback );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+<span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '60745', '_pricefilter', ta.mapsv2.FiltersMapCard.dateSelectedCallback );">
 <span id="date_picker_out_60745_pricefilter" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_ ">
 Check Out
 </span>
@@ -3538,8 +3678,8 @@ $
 </div>
 <div class="sponsorDeck ads2015 closed">
 <div class="sponsorLogoButtons">
-<div class="sponsoredByTxt">Sponsored by:</div> <span data-no-hotels="No Best Western hotels available in the area" data-trackingcode="BestWesternHotelsMapsSponsorship" class="lbstWst sponsor_BEST_WESTERN chkSet js_markerClassSponsor ">
-<input type="checkbox" class="sponsor_BEST_WESTERN" id="cbx-bstWst">
+<div class="sponsoredByTxt">Sponsored by:</div> <span data-no-hotels="No Best Western hotels available in the area" data-trackingcode="BestWesternHotelsMapsSponsorship" class="lbstWst sponsor_BEST_WESTERN chkSet js_markerClassSponsor cur">
+<input type="checkbox" checked="checked" class="sponsor_BEST_WESTERN" id="cbx-bstWst">
 <label for="cbx-bstWst" class="sprite-bstWst sponsorSprite"></label>
 <span class="sponsor-checkmark"></span>
 </span>
@@ -3578,7 +3718,7 @@ $
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '60745', '_listExpanded',                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_60745_listExpanded" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_ ">
 Check In
 </span>
@@ -3588,7 +3728,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '60745', '_listExpanded',                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_60745_listExpanded" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_ ">
 Check Out
 </span>
@@ -3672,39 +3812,11 @@ Return to Map </div>
 <div id="PERSISTENT_DATE_PICKER" class="hidden">
 <div class="filterControls moreProminent noDatesSelected">
 <div class="metaDatePicker moreProminent ">
-<div class="stayInfoHeaderDateTrigger outDateTrigger" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '', 'pdp',                     ta.servlet.HACSearch.doMetaDateSearch
-); ta.widgets.calendar.syncAllDatePickers();"></div>
-<div class="stayInfoHeader inDateTrigger  hotels   hidden " onclick=" ta.store('multiDP.trackString', 'CHANGE_CRITERIA'); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '', 'pdp',                     ta.servlet.HACSearch.doMetaDateSearch
-); ta.widgets.calendar.syncAllDatePickers(); event.stopPropagation();">
-<span class="bestPricesMsg">
-Best prices for <span class="dateHeader inDate"></span> - <span class="dateHeader outDate"></span> </span>
-<div class="roomOptions">
-<div class="stayInfoContainer nights ">
-<div class="stayInfoIcon sprite-date_picker-nights-green"></div>
-<div class="stayInfoLabel singular"><span class="grp-nights-value" id="grp-nights-value">1</span> night</div> <div class="stayInfoLabel plural">
-<span class="grp-nights-value" id="grp-nights-value">2</span> nights
-</div>
-</div>
-<div class="stayInfoContainer rooms ">
-<div class="stayInfoIcon sprite-date_picker-rooms-green"></div>
-<div class="stayInfoLabel singular"><span class="grp-rooms-value" id="grp-rooms-value">1</span> room</div> <div class="stayInfoLabel plural">
-<span class="grp-rooms-value" id="grp-rooms-value">2</span> rooms
-</div>
-</div>
-<div class="stayInfoContainer guests ">
-<div class="stayInfoIcon sprite-date_picker-guests-green"></div>
-<div class="stayInfoLabel singular"><span class="grp-guests-value" id="grp-guests-value">1</span> guest</div> <div class="stayInfoLabel plural">
-<span class="grp-guests-value" id="grp-guests-value">2</span> guests
-</div>
-</div>
-</div>
-<div class="changeStayInfoButton en changeDates sprite-change-dates-button-yellow" onclick="ta.store('multiDP.trackString', 'CHANGE_CRITERIA'); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '', 'pdp',                     ta.servlet.HACSearch.doMetaDateSearch
-); ta.widgets.calendar.syncAllDatePickers(); event.stopPropagation();">Change dates</div> <div class="changeStayInfoButton en sprite-gradient1x27_gry" onclick="ta.store('meta.session_isLessThan24Hours', true);ta.call('ta.p13n.wizard.hideAvailabilitySort', event, this);ta.store('changeRankWithoutDate',true);ta.hac.filters.clearDatesAndUpdateResults();ta.call('ta.p13n.wizard.checkPricesVisibility', event); ta.call('ta.p13n.wizard.closeCalendarFilter',event, this, true); ta.trk('clear_dates', false, this); event.stopPropagation();">Clear dates</div> </div>
 <div class="date_control_wrapper ">
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '60745', '_pdp',                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_60745_pdp" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id__dateBar ">
 Check In
 </span>
@@ -3714,7 +3826,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '60745', '_pdp',                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_60745_pdp" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id__dateBar ">
 Check Out
 </span>
@@ -3722,7 +3834,7 @@ Check Out
 </span>
 </div>
 <img class="show_prices_button pointer fl sprite-showPricesIdle_ylw_lrg" src="http://e2.tacdn.com/img2/x.gif" alt="Price Your Stay" onmouseover="this.addClass('sprite-showPricesHover_ylw_lrg')" onmouseout="this.removeClass('sprite-showPricesHover_ylw_lrg')" onclick="ta.widgets.calendar.trackCRButtonClick('PERSISTENT_DATE_PICKER'); ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '60745', '_pdp',                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <img class="change_dates_button pointer fl hidden" src="http://e2.tacdn.com/img2/buttons/changeDates.png" alt="" onmouseover="this.src='http://e2.tacdn.com/img2/buttons/changeDates_hover.png'" onmouseout="this.src='http://e2.tacdn.com/img2/buttons/changeDates.png'" onclick="ta.call('ta.overlays.Factory.simulateDatePickerClick', event, this, '60745', '_pdp',                     ta.servlet.HACSearch.doMetaDateSearch
  );">
 <span class="clearDatesWrapper hidden" onclick="ta.store('meta.session_isLessThan24Hours', true);ta.hac.filters.clearDatesAndUpdateResults();">
@@ -5306,28 +5418,6 @@ Wyndham <span id="zfb_77_a_count">(1)</span>
 <div id="BODYCON" class="col poolA new_meta_chevron_v2" typeof="v:Organization">
 <div class="wrpHeader tabView">
 </div>
-<div class="hidden guestsRoomsDatePickerHeaderForInject">
-<div>
-<span class="selectedDatesTxt">
-<span class="dateLabel inDate">Check In</span> - <span class="dateLabel outDate">Check Out</span>
-</span>
-<span class="guests_rooms_picker_container roomsGuestsButtonWrap hotels" onclick="ta.call('ta.overlays.Factory.loadGuestsRoomsOverlay', event, this, null, {callback: ta.widgets.calendar.checkDatesMakeHacCallHotels }); ta.call('ta.overlays.GuestsRoomsOverlay.trackPickerClick',event);; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons',event); ta.call('ta.widgets.calendar.syncAllDatePickers',event);;">
-<div class="roomsGuests">
-<div class="roomsGuestsButton roomsButton ">
-<div class="roomsGuestsIcon  sprite-date_picker-rooms-green "></div>
-<div class="roomsGuestsLabel singular"><span class="grp-rooms-value" id="grp-rooms-value">1</span> room</div> <div class="roomsGuestsLabel plural">
-<span class="grp-rooms-value" id="grp-rooms-value">2</span> rooms
-</div>
-</div>
-<div class="roomsGuestsButton guestsButton  multiple ">
-<div class="roomsGuestsIcon  sprite-date_picker-guests-green "></div>
-<div class="roomsGuestsLabel singular"><span class="grp-guests-value" id="grp-guests-value">1</span> guest</div> <div class="roomsGuestsLabel plural">
-<span class="grp-guests-value" id="grp-guests-value">2</span> guests
-</div>
-</div>
-</div>
-</span>
-</div> </div>
 <div id="HAC_PROGRESS_CONTAINER">
 <div id="HAC_PROGRESS" class="hotels_re_2011 ">
 <strong class="tipText"><b>Tip:</b> Refine your search by price, amenities, & more.</strong>
@@ -5358,7 +5448,7 @@ We search <strong>over 220 sites</strong> to find you the best deal. </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, 'PriceFilterCalendar', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_PriceFilterCalendar" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_ ">
 Check In
 </span>
@@ -5368,7 +5458,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, 'PriceFilterCalendar', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_PriceFilterCalendar" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_ ">
 Check Out
 </span>
@@ -5386,13 +5476,13 @@ Check Out
 <!--trkP:prodp13n_single_category_recs_cohort-->
 <!-- PLACEMENT prodp13n_single_category_recs_cohort -->
 <DIV ID="taplc_prodp13n_single_category_recs_cohort_0" class="ppr_rup ppr_priv_prodp13n_single_category_recs_cohort">
-<div id="prodp13n_single_category_recs_cohort" class="  wouldHaveSlide  " style="display:none;" data-categorySpecifier="y100"> </div>
+<div id="prodp13n_single_category_recs_cohort" class="  wouldHaveSlide  " style="display:none;" data-categorySpecifier="y4"> </div>
 </DIV>
 <!--etk-->
 <!--trkP:hotels_list_short_cells-->
 <!-- PLACEMENT hotels_list_short_cells -->
 <DIV ID="taplc_hotels_list_short_cells_0" class="ppr_rup ppr_priv_hotels_list_short_cells">
-<div id="ACCOM_OVERVIEW" class="deckA hacTabLIST shortCells noDates xthrough_tracking_on" data-navArea-placement="Main">
+<div id="ACCOM_OVERVIEW" class="deckA hacTabLIST shortCells noDates with_tabs xthrough_tracking_on" data-navArea-placement="Main">
 <!--trkHOHL-->
 <div id="highlightHotelContentWrap" class="">
 <div id="highlightHotelContent" class="hidden">
@@ -5442,7 +5532,7 @@ Special Offer
 </span>
 <span class="more">
 <a onclick=" ta.setEvtCookie('Reviews', 'ReviewCount', '', 0, '/Hotel_Review');" target="_blank" href="/Hotel_Review-g60745-d1138709-Reviews-Holiday_Inn_Express_Hotel_Suites_Boston_Garden-Boston_Massachusetts.html#REVIEWS">
-305 reviews
+306 reviews
 </a>
 </span>
 </div>
@@ -5471,7 +5561,7 @@ Other travelers love this hotel, Popular budget hotel in Boston, Offers free wif
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d1138709-Reviews-Holiday_Inn_Express_Hotel_Suites_Boston_Garden-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '1138709', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_5' height='135' style='height: 135px; width: 222px; margin-left: -23px;' alt='Holiday Inn Express Hotel &amp; Suites Boston Garden' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_7' height='159' style='height: 159px; width: 261px; margin-left: -43px;' alt='Holiday Inn Express Hotel &amp; Suites Boston Garden' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 <span class="slideshow taLnk hvrIE6" onclick="ta.trackEventOnPage(          'Hotels'
   , 'BL_SLIDESHOW|text|1|3|61', '1138709', 0); ta.call('ta.overlays.Factory.loadBLSlideshowOverlay', event, this, 1138709, 27275);">
@@ -5484,7 +5574,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '1138709', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_1138709" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_1138709 ">
 Check In
 </span>
@@ -5494,7 +5584,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '1138709', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_1138709" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_1138709 ">
 Check Out
 </span>
@@ -5516,6 +5606,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="1138709"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(306)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(76)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:2/L:1513541-->
@@ -5549,10 +5640,10 @@ Ames Boston Hotel</a>
 #62 Just for You </span>
 <span class="reason">
 <span class="short">
-Great if you love nightlife, Upscale&hellip;
+Good choice for travelers who love&hellip;
 <span class="more" onselectstart="return false;" onmouseover="ta.plc_hotels_list_short_cells_0_handlers.jfyMoreOverlay(event, this);">more</span> </span>
 <span class="full">
-Great if you love nightlife, Upscale, Popular upscale hotel in Boston
+Good choice for travelers who love nightlife, Upscale, Popular upscale hotel in Boston
 <span class="less">less</span> </span>
 </span>
 <!--trkrsn-->
@@ -5564,7 +5655,7 @@ Great if you love nightlife, Upscale, Popular upscale hotel in Boston
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d1513541-Reviews-Ames_Boston_Hotel-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '1513541', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_6' height='136' style='height: 234px; width: 175px; margin-top: -49px;' alt='Ames Boston Hotel' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_8' height='160' style='height: 234px; width: 175px; margin-top: -37px;' alt='Ames Boston Hotel' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 <span class="slideshow taLnk hvrIE6" onclick="ta.trackEventOnPage(          'Hotels'
   , 'BL_SLIDESHOW|text|2|3|62', '1513541', 0); ta.call('ta.overlays.Factory.loadBLSlideshowOverlay', event, this, 1513541, 17291);">
@@ -5577,7 +5668,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '1513541', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_1513541" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_1513541 ">
 Check In
 </span>
@@ -5587,7 +5678,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '1513541', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_1513541" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_1513541 ">
 Check Out
 </span>
@@ -5609,6 +5700,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="1513541"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(870)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(417)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:3/L:222955-->
@@ -5668,7 +5760,7 @@ Has a bar/lounge, Close to Freedom Trail, Popular centrally located hotel in Bos
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d222955-Reviews-The_Ritz_Carlton_Boston_Common-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '222955', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_7' height='135' style='height: 135px; width: 203px; margin-left: -14px;' alt='The Ritz-Carlton Boston Common' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_9' height='159' style='height: 159px; width: 239px; margin-left: -32px;' alt='The Ritz-Carlton Boston Common' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 <span class="slideshow taLnk hvrIE6" onclick="ta.trackEventOnPage(          'Hotels'
   , 'BL_SLIDESHOW|text|3|3|63', '222955', 0); ta.call('ta.overlays.Factory.loadBLSlideshowOverlay', event, this, 222955, 27287);">
@@ -5681,7 +5773,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '222955', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_222955" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_222955 ">
 Check In
 </span>
@@ -5691,7 +5783,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '222955', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_222955" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_222955 ">
 Check Out
 </span>
@@ -5713,6 +5805,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="222955"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(513)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(421)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:4/L:94363-->
@@ -5772,7 +5865,7 @@ Other travelers love this hotel, Has a pool, Mid-range hotel
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d94363-Reviews-Courtyard_by_Marriott_Boston_Logan_Airport-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '94363', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_8' height='135' style='height: 135px; width: 196px; margin-left: -10px;' alt='Courtyard by Marriott Boston Logan Airport' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_10' height='159' style='height: 159px; width: 231px; margin-left: -28px;' alt='Courtyard by Marriott Boston Logan Airport' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 <span class="slideshow taLnk hvrIE6" onclick="ta.trackEventOnPage(          'Hotels'
   , 'BL_SLIDESHOW|text|4|3|64', '94363', 0); ta.call('ta.overlays.Factory.loadBLSlideshowOverlay', event, this, 94363, 27293);">
@@ -5785,7 +5878,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '94363', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_94363" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_94363 ">
 Check In
 </span>
@@ -5795,7 +5888,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '94363', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_94363" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_94363 ">
 Check Out
 </span>
@@ -5817,6 +5910,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="94363"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(430)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(48)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:5/L:1159285-->
@@ -5865,7 +5959,7 @@ In Back Bay, A top romantic hotel in Boston, Popular mid-range hotel in Boston
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d1159285-Reviews-The_Inn_At_St_Botolph-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '1159285', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_9' height='136' style='height: 136px; width: 200px; margin-left: -12px;' alt='The Inn At St Botolph' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_11' height='159' style='height: 159px; width: 235px; margin-left: -30px;' alt='The Inn At St Botolph' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 <span class="slideshow taLnk hvrIE6" onclick="ta.trackEventOnPage(          'Hotels'
   , 'BL_SLIDESHOW|text|5|3|65', '1159285', 0); ta.call('ta.overlays.Factory.loadBLSlideshowOverlay', event, this, 1159285, 17294);">
@@ -5878,7 +5972,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '1159285', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_1159285" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_1159285 ">
 Check In
 </span>
@@ -5888,7 +5982,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '1159285', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_1159285" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_1159285 ">
 Check Out
 </span>
@@ -5910,6 +6004,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="1159285"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(429)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(349)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <div class="ad iab_leaBoa inlineBannerAd">
 <div id="gpt-ad-728x90-b" class="adInner gptAd delayAd"></div>
@@ -5972,7 +6067,7 @@ Popular contemporary hotel in Boston, In South Boston, A top contemporary hotel 
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d4232689-Reviews-Residence_Inn_Boston_Downtown_Seaport-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '4232689', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_10' height='136' style='height: 140px; width: 175px;' alt='Residence Inn Boston Downtown Seaport' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_12' height='160' style='height: 160px; width: 200px; margin-left: -12px;' alt='Residence Inn Boston Downtown Seaport' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 <div class="photo_badge_gl" onclick="ta.util.cookie.setPIDCookie(34210);ta.call('ta.overlays.Factory.greenLeaderOverlay', event, this, 4232689, true);">
 <img class="sprite-green-leader-leaf" src="http://e2.tacdn.com/img2/x.gif" alt=""/>
 <b class="lbl">
@@ -5991,7 +6086,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '4232689', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_4232689" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_4232689 ">
 Check In
 </span>
@@ -6001,7 +6096,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '4232689', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_4232689" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_4232689 ">
 Check Out
 </span>
@@ -6023,6 +6118,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="4232689"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(234)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(310)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:7/L:555224-->
@@ -6082,7 +6178,7 @@ Mid-range hotel, Other travelers love this hotel, Offers free wifi
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d555224-Reviews-Courtyard_Boston_South_Boston-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '555224', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_11' height='135' style='height: 135px; width: 196px; margin-left: -10px;' alt='Courtyard Boston-South Boston' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_13' height='159' style='height: 159px; width: 231px; margin-left: -28px;' alt='Courtyard Boston-South Boston' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 <span class="slideshow taLnk hvrIE6" onclick="ta.trackEventOnPage(          'Hotels'
   , 'BL_SLIDESHOW|text|7|3|67', '555224', 0); ta.call('ta.overlays.Factory.loadBLSlideshowOverlay', event, this, 555224, 27311);">
@@ -6095,7 +6191,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '555224', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_555224" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_555224 ">
 Check In
 </span>
@@ -6105,7 +6201,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '555224', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_555224" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_555224 ">
 Check Out
 </span>
@@ -6127,6 +6223,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="555224"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(344)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(53)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:8/L:220216-->
@@ -6175,7 +6272,7 @@ Close to Boston Public Garden, Has a bar/lounge, Popular romantic hotel in Bosto
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d220216-Reviews-Beacon_Hill_Hotel_and_Bistro-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '220216', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_12' height='136' style='height: 140px; width: 175px;' alt='Beacon Hill Hotel and Bistro' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_14' height='160' style='height: 160px; width: 200px; margin-left: -12px;' alt='Beacon Hill Hotel and Bistro' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 <span class="slideshow taLnk hvrIE6" onclick="ta.trackEventOnPage(          'Hotels'
   , 'BL_SLIDESHOW|text|8|3|68', '220216', 0); ta.call('ta.overlays.Factory.loadBLSlideshowOverlay', event, this, 220216, 17297);">
@@ -6188,7 +6285,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '220216', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_220216" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_220216 ">
 Check In
 </span>
@@ -6198,7 +6295,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '220216', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_220216" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_220216 ">
 Check Out
 </span>
@@ -6220,6 +6317,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="220216"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(143)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(201)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:9/L:222958-->
@@ -6279,7 +6377,7 @@ Provides transportation to the airport, Popular mid-range hotel in Boston
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d222958-Reviews-Comfort_Inn_Boston-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '222958', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_13' height='135' style='height: 135px; width: 191px; margin-left: -8px;' alt='Comfort Inn - Boston' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_15' height='159' style='height: 159px; width: 224px; margin-left: -24px;' alt='Comfort Inn - Boston' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 <div class="photo_badge_gl" onclick="ta.util.cookie.setPIDCookie(34210);ta.call('ta.overlays.Factory.greenLeaderOverlay', event, this, 222958, true);">
 <img class="sprite-green-leader-leaf" src="http://e2.tacdn.com/img2/x.gif" alt=""/>
 <b class="lbl">
@@ -6298,7 +6396,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '222958', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_222958" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_222958 ">
 Check In
 </span>
@@ -6308,7 +6406,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '222958', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_222958" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_222958 ">
 Check Out
 </span>
@@ -6330,6 +6428,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="222958"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(287)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(125)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:10/L:268206-->
@@ -6378,7 +6477,7 @@ A top city center hotel in Boston, In Back Bay, Popular city center hotel in Bos
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d268206-Reviews-The_Boston_Common_Hotel_and_Conference_Center-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '268206', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_14' height='135' style='height: 135px; width: 213px; margin-left: -19px;' alt='The Boston Common Hotel and Conference Center' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_16' height='159' style='height: 159px; width: 251px; margin-left: -38px;' alt='The Boston Common Hotel and Conference Center' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 </div>
 <div class="metaPriceInfo
@@ -6388,7 +6487,7 @@ A top city center hotel in Boston, In Back Bay, Popular city center hotel in Bos
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '268206', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_268206" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_268206 ">
 Check In
 </span>
@@ -6398,7 +6497,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '268206', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_268206" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_268206 ">
 Check Out
 </span>
@@ -6420,6 +6519,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="268206"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(443)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(230)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <div class="ad iab_leaBoa inlineBannerAd">
 <div id="gpt-ad-728x90-c" class="adInner gptAd delayAd"></div>
@@ -6453,7 +6553,7 @@ Special Offer
 </span>
 <span class="more">
 <a onclick=" setPID(8539);  ta.setEvtCookie('Reviews', 'ReviewCount', '', 0, '/Hotel_Review');" target="_blank" href="/Hotel_Review-g60745-d89619-Reviews-Courtyard_Boston_Downtown-Boston_Massachusetts.html#REVIEWS">
-807 reviews
+808 reviews
 </a>
 </span>
 </div>
@@ -6482,7 +6582,7 @@ Mid-range hotel, Other travelers love this hotel, Near Boston Common
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d89619-Reviews-Courtyard_Boston_Downtown-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '89619', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_15' height='135' style='height: 135px; width: 203px; margin-left: -14px;' alt='Courtyard Boston Downtown' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_17' height='159' style='height: 159px; width: 239px; margin-left: -32px;' alt='Courtyard Boston Downtown' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 <span class="slideshow taLnk hvrIE6" onclick="ta.trackEventOnPage(          'Hotels'
   , 'BL_SLIDESHOW|text|11|3|71', '89619', 0); ta.call('ta.overlays.Factory.loadBLSlideshowOverlay', event, this, 89619, 27335);">
@@ -6495,7 +6595,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '89619', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_89619" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_89619 ">
 Check In
 </span>
@@ -6505,7 +6605,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '89619', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_89619" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_89619 ">
 Check Out
 </span>
@@ -6527,6 +6627,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="89619"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(808)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(198)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:12/L:111418-->
@@ -6557,7 +6658,7 @@ Special Price
 </span>
 <span class="more">
 <a onclick=" setPID(27332);  ta.setEvtCookie('Reviews', 'ReviewCount', '', 0, '/Hotel_Review');" target="_blank" href="/Hotel_Review-g60745-d111418-Reviews-Boston_Park_Plaza-Boston_Massachusetts.html#REVIEWS">
-4,247 reviews
+4,253 reviews
 </a>
 </span>
 </div>
@@ -6580,13 +6681,13 @@ Offers free wifi, Popular mid-range hotel in Boston, Close to Boston Public Gard
 <!--trkrsn-->
 <!--etk-->
 </div>
-<DIV class="prw_rup prw_common_short_cell_review_snippets" data-prwidget-name="common_short_cell_review_snippets" data-prwidget-init=""><ul class="listing_reviews stacked"><li><span class="title">&#x201c;<a target="_blank"onclick="ta.util.cookie.setPIDCookie(15177); ta.setEvtCookie('Reviews', 'Snippet', '263893163', 1, this.href);"href="/ShowUserReviews-g60745-d111418-r263893163-Boston_Park_Plaza-Boston_Massachusetts.html#review_263893163"title="Under renovation">Under renovation</a>&#x201d;</span> <span class="date">04/06/2015</span></li><li class="last"><span class="title">&#x201c;<a target="_blank"onclick="ta.util.cookie.setPIDCookie(15177); ta.setEvtCookie('Reviews', 'Snippet', '263883056', 2, this.href);"href="/ShowUserReviews-g60745-d111418-r263883056-Boston_Park_Plaza-Boston_Massachusetts.html#review_263883056"title="not worth the price">not worth the price</a>&#x201d;</span> <span class="date">04/06/2015</span></li></ul></DIV>
+<DIV class="prw_rup prw_common_short_cell_review_snippets" data-prwidget-name="common_short_cell_review_snippets" data-prwidget-init=""><ul class="listing_reviews stacked"><li><span class="title">&#x201c;<a target="_blank"onclick="ta.util.cookie.setPIDCookie(15177); ta.setEvtCookie('Reviews', 'Snippet', '263962552', 1, this.href);"href="/ShowUserReviews-g60745-d111418-r263962552-Boston_Park_Plaza-Boston_Massachusetts.html#review_263962552"title="OK Stay">OK Stay</a>&#x201d;</span> <span class="date">04/06/2015</span></li><li class="last"><span class="title">&#x201c;<a target="_blank"onclick="ta.util.cookie.setPIDCookie(15177); ta.setEvtCookie('Reviews', 'Snippet', '263957169', 2, this.href);"href="/ShowUserReviews-g60745-d111418-r263957169-Boston_Park_Plaza-Boston_Massachusetts.html#review_263957169"title="Average">Average</a>&#x201d;</span> <span class="date">04/06/2015</span></li></ul></DIV>
 <div class="p13n_reasoning_v2">
 </div>
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d111418-Reviews-Boston_Park_Plaza-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '111418', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_16' height='135' style='height: 135px; width: 203px; margin-left: -14px;' alt='Boston Park Plaza' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_18' height='159' style='height: 159px; width: 239px; margin-left: -32px;' alt='Boston Park Plaza' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 <span class="slideshow taLnk hvrIE6" onclick="ta.trackEventOnPage(          'Hotels'
   , 'BL_SLIDESHOW|text|12|3|72', '111418', 0); ta.call('ta.overlays.Factory.loadBLSlideshowOverlay', event, this, 111418, 17361);">
@@ -6599,7 +6700,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '111418', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_111418" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_111418 ">
 Check In
 </span>
@@ -6609,7 +6710,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '111418', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_111418" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_111418 ">
 Check Out
 </span>
@@ -6631,6 +6732,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="111418"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(4,253)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(998)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:13/L:217148-->
@@ -6690,7 +6792,7 @@ Has a bar/lounge, Budget hotel, Popular budget hotel in Boston
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d217148-Reviews-Ramada_Boston-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '217148', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_17' height='135' style='height: 135px; width: 178px;' alt='Ramada Boston' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_19' height='159' style='height: 159px; width: 210px;' alt='Ramada Boston' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 <div class="photo_badge_gl" onclick="ta.util.cookie.setPIDCookie(34210);ta.call('ta.overlays.Factory.greenLeaderOverlay', event, this, 217148, true);">
 <img class="sprite-green-leader-leaf" src="http://e2.tacdn.com/img2/x.gif" alt=""/>
 <b class="lbl">
@@ -6709,7 +6811,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '217148', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_217148" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_217148 ">
 Check In
 </span>
@@ -6719,7 +6821,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '217148', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_217148" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_217148 ">
 Check Out
 </span>
@@ -6741,6 +6843,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="217148"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(920)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(190)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:14/L:89592-->
@@ -6789,7 +6892,7 @@ Has a concierge, Other travelers love this hotel, Near Boston Common
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d89592-Reviews-Milner_Hotel-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '89592', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_18' height='135' style='height: 135px; width: 181px; margin-left: -3px;' alt='Milner Hotel' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_20' height='159' style='height: 159px; width: 213px; margin-left: -19px;' alt='Milner Hotel' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 </div>
 <div class="metaPriceInfo
@@ -6799,7 +6902,7 @@ Has a concierge, Other travelers love this hotel, Near Boston Common
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '89592', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_89592" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_89592 ">
 Check In
 </span>
@@ -6809,7 +6912,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '89592', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_89592" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_89592 ">
 Check Out
 </span>
@@ -6831,6 +6934,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="89592"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(368)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(270)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:15/L:126058-->
@@ -6874,7 +6978,7 @@ In Charlestown
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d126058-Reviews-Constitution_Inn-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '126058', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_19' height='135' style='height: 135px; width: 189px;' alt='Constitution Inn' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_21' height='159' style='height: 159px; width: 223px;' alt='Constitution Inn' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 </div>
 <div class="metaPriceInfo
@@ -6884,7 +6988,7 @@ In Charlestown
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '126058', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_126058" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_126058 ">
 Check In
 </span>
@@ -6894,7 +6998,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '126058', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_126058" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_126058 ">
 Check Out
 </span>
@@ -6916,6 +7020,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="126058"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(411)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(74)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <div class="ad iab_leaBoa inlineBannerAd">
 <div id="gpt-ad-728x90-d" class="adInner gptAd delayAd"></div>
@@ -6978,7 +7083,7 @@ Budget hotel, Has a fitness center, Popular budget hotel in Boston
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d217000-Reviews-Days_Hotel_Boston-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '217000', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_20' height='135' style='height: 135px; width: 178px; margin-left: -1px;' alt='Days Hotel Boston' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_22' height='159' style='height: 159px; width: 210px; margin-left: -17px;' alt='Days Hotel Boston' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 <span class="slideshow taLnk hvrIE6" onclick="ta.trackEventOnPage(          'Hotels'
   , 'BL_SLIDESHOW|text|16|3|76', '217000', 0); ta.call('ta.overlays.Factory.loadBLSlideshowOverlay', event, this, 217000, 27365);">
@@ -6991,7 +7096,7 @@ Slideshow </span>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '217000', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_217000" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_217000 ">
 Check In
 </span>
@@ -7001,7 +7106,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '217000', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_217000" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_217000 ">
 Check Out
 </span>
@@ -7023,6 +7128,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="217000"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(190)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(10)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--trkN:17/L:216999-->
@@ -7065,7 +7171,7 @@ Americas Best Value Inn</a>
 </div>
 <div class="photo_booking">
 <a href="/Hotel_Review-g60745-d216999-Reviews-Americas_Best_Value_Inn-Boston_Massachusetts.html" target="_blank" onclick="ta.setEvtCookie('Reviews', 'Thumbnail', '216999', 0, this.href); ta.util.cookie.setPIDCookie(15178);">
-<img id='lazyload_-575606663_21' height='135' style='height: 135px; width: 178px; margin-left: -1px;' alt='Americas Best Value Inn' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_23' height='159' style='height: 159px; width: 210px; margin-left: -17px;' alt='Americas Best Value Inn' width='175' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </a>
 </div>
 <div class="metaPriceInfo
@@ -7075,7 +7181,7 @@ Americas Best Value Inn</a>
 <div class="meta_date_wrapper withoutLabels  moreProminent fl   ">
 <span class="meta_date_field   check_in   first">
 <span tabindex="0" class=" date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent " onclick="ta.call('ta.overlays.Factory.loadDatePicker', event, this, '216999', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);" data-in="true">
+ );" data-in="true">
 <span id="date_picker_in_216999" class="date_picker date   moreProminent                     sprite-calendar-ylw dpv5 no_cpu id_216999 ">
 Check In
 </span>
@@ -7085,7 +7191,7 @@ Check In
 </span>
 <span class="meta_date_field   check_out  ">
 <span tabindex="0" class="date_picker_calendar_wrap dual_date no_cpu classicText  classicStyling moreProminent out_date" onclick="ta.store('ta.calendar.isOutDateTrigger', true); ta.call('ta.overlays.Factory.loadDatePicker', event, this, '216999', false,                     ta.servlet.HACSearch.doMetaDateSearch
- );; ta.call('ta.overlays.Factory.updateAllGuestsRoomsButtons', event); ta.call('ta.widgets.calendar.syncAllDatePickers', event);">
+ );">
 <span id="date_picker_out_216999" class="date_picker out_date date   moreProminent                     sprite-calendar-ylw no_cpu id_216999 ">
 Check Out
 </span>
@@ -7107,6 +7213,7 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 </div>
 </div>
+<DIV class="prw_rup prw_hotels_tabs_drawer" data-prwidget-name="hotels_tabs_drawer" data-prwidget-init="handlers"><div class="tab_drawer_wrapper"><ul class="tab_bar" onclick="(ta.prwidgets.getjs(this,&#39;handlers&#39;)).onTabsClick(event);" data-locationid="216999"><li class="tab_bar_tab" data-placementid="rate_details_drawer" data-trackingValue="rates"><span class="tab_divider"></span>Rates<span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="reviews_drawer" data-trackingValue="reviews"><span class="tab_divider"></span>Reviews <span>(18)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="photos_drawer" data-trackingValue="photos"><span class="tab_divider"></span>Photos <span>(4)</span><span class="tab_expand_arrow"></span></li><li class="tab_bar_tab" data-placementid="map_drawer" data-trackingValue="map"><span class="tab_divider"></span>Map<span class="tab_expand_arrow"></span></li></ul><div class="tab_drawer"></div><img class="drawer_loading" src="http://e2.tacdn.com/img2/generic/site/loading_anim_gry_sml.gif" alt=""/><div class="drawer_footer"><div class="collapse_button" onclick="ta.trackEventOnPage('HotelsTabsDrawer', 'click', 'close_bar'); (ta.prwidgets.getjs(this,&#39;handlers&#39;)).onCloseClick(event, this);"><span class="arrow sprite-arrow_up_white"></span></div></div></div></DIV>
 </div>
 <!--etk-->
 <!--etk-->
@@ -7155,11 +7262,11 @@ Show Prices </span> <span class='overlaySrc'></span>
 <div>
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 110px; width: 115px; ">
-<img id='lazyload_-575606663_22' height='110' style='height: 115px; width: 115px;' alt='Hilton Boston Logan Airport' width='115' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_24' height='110' style='height: 115px; width: 115px;' alt='Boston Marriott Long Wharf' width='115' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
-<div class="subtitle">Hilton Boston Logan Airport</div>
-<div class="review_title"><a target="_blank" href="/ShowUserReviews-g60745-d120988-r263836844-Hilton_Boston_Logan_Airport-Boston_Massachusetts.html#UR263836844">"Very nice hotel within walking distance to the terminals"</a></div>
+<div class="subtitle">Boston Marriott Long Wharf</div>
+<div class="review_title"><a target="_blank" href="/ShowUserReviews-g60745-d111417-r263808617-Boston_Marriott_Long_Wharf-Boston_Massachusetts.html#UR263808617">"Best Brunch Buffett in Boston Mass"</a></div>
 <div class="rating wrap">
 <span class="rate rate_ss ss40">
 <img class="sprite-ratings" src="http://e2.tacdn.com/img2/x.gif" alt="4 of 5 stars">
@@ -7168,10 +7275,10 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 <div class="recent_review_text">
 <span class="recent_review_subtext">
-"This hotel is immaculate. It is close to a variety of food options within the hotel and nearby. The small gift shop near the lobby has get items to remember your visit to the Boston area. The location offers the option of walking to the terminals at Logan airport, but they also have a shuttle bus t
+"Best Brunch Buffett in Boston Mass!!! First of all lets talk about the outstanding view of Boston Harbor. The food was incredible! Best Braised Short Ribs and mash potatoes - so yummy! The Cod was so fresh! Bacon and omelets were great too! The service was great! Our waiters, Brian and Peter alw
 </span>
 <span id="TOGGLEME_1" class="toggle off">
-<span class="onShow"> o pick you up or drop you off. Other members of my party were picked up at the car rental drop off, so they skipped the shuttle back to Logan, and they were brought straight to the hotel.
+<span class="onShow"> ays made sure we had fresh plates and our refresh drinks. I have to give a big shout out to the hostess who changed out table to a window seat to accommodate my Dad who was hard of hearing. Thanks for a great Easter Sunday Brunch!
 </span>
 <span class="controls">
 <span class="show" onclick="ta.id('TOGGLEME_1').removeClass('off'); ta.id('TOGGLEME_2').removeClass('off');" style="cursor:pointer;">
@@ -7186,11 +7293,11 @@ Show Prices </span> <span class='overlaySrc'></span>
 <div>
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 110px; width: 115px; ">
-<img id='lazyload_-575606663_23' height='110' style='height: 115px; width: 115px;' alt='Embassy Suites Boston Logan Airport' width='115' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_25' height='110' style='height: 115px; width: 115px;' alt='Holiday Inn Express Boston' width='115' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
-<div class="subtitle">Embassy Suites Boston Logan Airport</div>
-<div class="review_title"><a target="_blank" href="/ShowUserReviews-g60745-d268205-r263841099-Embassy_Suites_Boston_Logan_Airport-Boston_Massachusetts.html#UR263841099">"Embassy Suites are---Sweet!"</a></div>
+<div class="subtitle">Holiday Inn Express Boston</div>
+<div class="review_title"><a target="_blank" href="/ShowUserReviews-g60745-d121009-r263821562-Holiday_Inn_Express_Boston-Boston_Massachusetts.html#UR263821562">"Convenient location and friendly service"</a></div>
 <div class="rating wrap">
 <span class="rate rate_ss ss40">
 <img class="sprite-ratings" src="http://e2.tacdn.com/img2/x.gif" alt="4 of 5 stars">
@@ -7199,11 +7306,10 @@ Show Prices </span> <span class='overlaySrc'></span>
 </div>
 <div class="recent_review_text">
 <span class="recent_review_subtext">
-"Stayed at our first ES in downtown Portland, Oregon over spring break 2015. Short story---It was amazing and worth the extra $$$.
-I liked the Hampton Inn & Suites for their rooms ,amenities (included breakfast & even reception), and price. So when my wife booked Embassy Suites and told me th
+"Met a friend from providence here for the weekend and to goto wish you would not have to drive in the city . Location ended up being perfect. Very easy to get to Andrew subway station, a short walk or the shuttle went every 30 minutes. Neighborhood wasn't perfect and had a fair number of homeless
 </span>
 <span id="TOGGLEME_2" class="toggle off">
-<span class="onShow"> e extra cost I was skeptical. Well, the wife did her homework as our Portland, Oregon Embassy Suites stay was awesome! So much so that when we fly to Boston this summer for a short business trip and vacation, that we will be booking Boston's ES for our stay.
+<span class="onShow"> people around but I felt safe. The staff were extremely helpful and friendly and the rooms were very comfortable. Good breakfast included.
 </span>
 <span class="controls">
 <span class="show" onclick="ta.id('TOGGLEME_1').removeClass('off'); ta.id('TOGGLEME_2').removeClass('off');" style="cursor:pointer;">
@@ -7217,20 +7323,20 @@ I liked the Hampton Inn & Suites for their rooms ,amenities (included breakfast 
 <li class="recent_review_item">
 <div>
 <div class="deals_thumbnail">
-<div class="sizedThumb  " style="height: 110px; width: 115px; ">
-<img id='lazyload_-575606663_24' height='110' style='height: 115px; width: 115px;' alt='Boston Park Plaza' width='115' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<div class="sizedThumb  " style="height: 109px; width: 115px; ">
+<img id='lazyload_162788109_26' height='109' style='height: 109px; width: 199px; margin-left: -42px;' alt='Seaport Boston Hotel' width='115' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
-<div class="subtitle">Boston Park Plaza</div>
-<div class="review_title"><a target="_blank" href="/ShowUserReviews-g60745-d111418-r263838639-Boston_Park_Plaza-Boston_Massachusetts.html#UR263838639">"Has potential."</a></div>
+<div class="subtitle">Seaport Boston Hotel</div>
+<div class="review_title"><a target="_blank" href="/ShowUserReviews-g60745-d94330-r263904032-Seaport_Boston_Hotel-Boston_Massachusetts.html#UR263904032">"Excellent service and attention!"</a></div>
 <div class="rating wrap">
-<span class="rate rate_ss ss35">
-<img class="sprite-ratings" src="http://e2.tacdn.com/img2/x.gif" alt="3.5 of 5 stars">
+<span class="rate rate_ss ss45">
+<img class="sprite-ratings" src="http://e2.tacdn.com/img2/x.gif" alt="4.5 of 5 stars">
 </span>
 </div>
 </div>
 <div class="recent_review_text">
-<span class="recent_review_subtext">"I was disappointed and distracted with all the renovations going on. I didn't realize before I booked. But the staff were absolutely amazing and helpful. I can't wait to see the hotel when it's finished!"</span>
+<span class="recent_review_subtext">"Excellent hotel and service. I want to single out specially the help received at the front desk by Ms. Santina who efficiently solved my problem with booking.She was very knowledgeable and cared. Thanks also to Mr. Robert. I am very grateful to them."</span>
 </div>
 </li>
 </ul>
@@ -7245,7 +7351,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_25' height='60' style='height: 60px; width: 60px;' alt='Holiday Inn Express Boston' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_27' height='60' style='height: 60px; width: 60px;' alt='Holiday Inn Express Boston' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d121009-Reviews-Holiday_Inn_Express_Boston-Boston_Massachusetts.html">Holiday Inn Express Boston</a>
@@ -7259,7 +7365,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_26' height='60' style='height: 60px; width: 60px;' alt='Hostelling International - Boston' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_28' height='60' style='height: 60px; width: 60px;' alt='Hostelling International - Boston' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d3169894-Reviews-Hostelling_International_Boston-Boston_Massachusetts.html">Hostelling International - Boston</a>
@@ -7273,7 +7379,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_27' height='60' style='height: 60px; width: 60px;' alt='Taj Boston' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_29' height='60' style='height: 60px; width: 60px;' alt='Taj Boston' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d89615-Reviews-Taj_Boston-Boston_Massachusetts.html">Taj Boston</a>
@@ -7288,7 +7394,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_28' height='60' style='height: 60px; width: 60px;' alt='DoubleTree Suites by Hilton Boston-Cambridge' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_30' height='60' style='height: 60px; width: 60px;' alt='DoubleTree Suites by Hilton Boston-Cambridge' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d111422-Reviews-DoubleTree_Suites_by_Hilton_Boston_Cambridge-Boston_Massachusetts.html">DoubleTree Suites by Hilton Boston-Cambridge</a>
@@ -7302,7 +7408,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_29' height='60' style='height: 60px; width: 60px;' alt='John Jeffries House' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_31' height='60' style='height: 60px; width: 60px;' alt='John Jeffries House' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d113623-Reviews-John_Jeffries_House-Boston_Massachusetts.html">John Jeffries House</a>
@@ -7316,7 +7422,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_30' height='60' style='height: 60px; width: 60px;' alt='The Westin Boston Waterfront' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_32' height='60' style='height: 60px; width: 60px;' alt='The Westin Boston Waterfront' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d595373-Reviews-The_Westin_Boston_Waterfront-Boston_Massachusetts.html">The Westin Boston Waterfront</a>
@@ -7335,7 +7441,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_31' height='60' style='height: 60px; width: 60px;' alt='Ames Boston Hotel' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_33' height='60' style='height: 60px; width: 60px;' alt='Ames Boston Hotel' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d1513541-Reviews-Ames_Boston_Hotel-Boston_Massachusetts.html">Ames Boston Hotel</a>
@@ -7349,7 +7455,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_32' height='60' style='height: 60px; width: 60px;' alt='Harborside Inn' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_34' height='60' style='height: 60px; width: 60px;' alt='Harborside Inn' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d94367-Reviews-Harborside_Inn-Boston_Massachusetts.html">Harborside Inn</a>
@@ -7363,7 +7469,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_33' height='60' style='height: 60px; width: 60px;' alt='Hilton Boston Back Bay' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_35' height='60' style='height: 60px; width: 60px;' alt='Hilton Boston Back Bay' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d111428-Reviews-Hilton_Boston_Back_Bay-Boston_Massachusetts.html">Hilton Boston Back Bay</a>
@@ -7377,7 +7483,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 59px; width: 60px; ">
-<img id='lazyload_-575606663_34' height='59' style='height: 59px; width: 94px; margin-left: -17px;' alt='Millennium Bostonian Hotel' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_36' height='59' style='height: 59px; width: 94px; margin-left: -17px;' alt='Millennium Bostonian Hotel' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d114150-Reviews-Millennium_Bostonian_Hotel-Boston_Massachusetts.html">Millennium Bostonian Hotel</a>
@@ -7391,7 +7497,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 59px; width: 60px; ">
-<img id='lazyload_-575606663_35' height='59' style='height: 59px; width: 79px;' alt='Ramada Boston' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_37' height='59' style='height: 59px; width: 79px;' alt='Ramada Boston' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d217148-Reviews-Ramada_Boston-Boston_Massachusetts.html">Ramada Boston</a>
@@ -7405,7 +7511,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_36' height='60' style='height: 60px; width: 60px;' alt='Boston Yacht Haven Inn &amp; Marina' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_38' height='60' style='height: 60px; width: 60px;' alt='Boston Yacht Haven Inn &amp; Marina' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d518130-Reviews-Boston_Yacht_Haven_Inn_Marina-Boston_Massachusetts.html">Boston Yacht Haven Inn & Marina</a>
@@ -7419,7 +7525,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_37' height='60' style='height: 60px; width: 60px;' alt='The Gilded Lily' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_39' height='60' style='height: 60px; width: 60px;' alt='The Gilded Lily' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d1403138-Reviews-The_Gilded_Lily-Boston_Massachusetts.html">The Gilded Lily</a>
@@ -7433,7 +7539,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_38' height='60' style='height: 60px; width: 60px;' alt='Caj Guest House Worcester Street' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_40' height='60' style='height: 60px; width: 60px;' alt='Caj Guest House Worcester Street' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d943435-Reviews-Caj_Guest_House_Worcester_Street-Boston_Massachusetts.html">Caj Guest House Worcester Street</a>
@@ -7447,7 +7553,7 @@ Recently Reviewed Hotels around Boston
 <li class="deals_item">
 <div class="deals_thumbnail">
 <div class="sizedThumb  " style="height: 60px; width: 60px; ">
-<img id='lazyload_-575606663_39' height='60' style='height: 72px; width: 60px; margin-top: -6px;' alt='Oasis Guest House Bed and Breakfast' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_41' height='60' style='height: 72px; width: 60px; margin-top: -6px;' alt='Oasis Guest House Bed and Breakfast' width='60' class='photo_image' src='http://e2.tacdn.com/img2/x.gif'/>
 </div>
 </div>
 <a class="pid3906" target="_blank" href="/Hotel_Review-g60745-d89596-Reviews-Oasis_Guest_House_Bed_and_Breakfast-Boston_Massachusetts.html">Oasis Guest House Bed and Breakfast</a>
@@ -7634,7 +7740,7 @@ Last reviewed Apr 6, 2015
 <a target="_blank" href="/Hotel_Review-g240329-d143905-Reviews-Ventana_Inn_Spa-Big_Sur_California.html">Ventana Inn &amp; Spa in Big Sur</a>
 </div>
 <div>
-<span>4.5 out of 5, </span> 698 reviews </div>
+<span>4.5 out of 5, </span> 699 reviews </div>
 <div class="data review_date">
 Last reviewed Apr 2, 2015
 </div>
@@ -7655,7 +7761,7 @@ Last reviewed Apr 2, 2015
 <div class="block">
 <dl class="sep brand">
 <dt>
-<img id='lazyload_-575606663_40' height='20' alt='TripAdvisor' width='132' src='http://e2.tacdn.com/img2/x.gif'/>
+<img id='lazyload_162788109_42' height='20' alt='TripAdvisor' width='132' src='http://e2.tacdn.com/img2/x.gif'/>
 </dt>
 <dd class="meta">
 Reviews and advice on hotels, resorts, flights, vacation rentals, travel packages, and more so you can plan and book your perfect trip!
@@ -7664,7 +7770,7 @@ Reviews and advice on hotels, resorts, flights, vacation rentals, travel package
 <div class="sep internal">
 <span><a class="taLnk" href="/PressCenter-c6-About_Us.html">About Us</a></span>
 | <span><a class="taLnk" href="/AllLocations-g60745-c1-Hotels-Boston_Massachusetts.html">Site Map</a></span>
-| <span class="taLnk" onclick="return ta.call('ta.overlays.Factory.helpCenterLB', event);">Help&nbsp;Center <img id='lazyload_-575606663_41' height='10' alt='' width='14' src='http://e2.tacdn.com/img2/x.gif'/></span> </div>
+| <span class="taLnk" onclick="return ta.call('ta.overlays.Factory.helpCenterLB', event);">Help&nbsp;Center <img id='lazyload_162788109_43' height='10' alt='' width='14' src='http://e2.tacdn.com/img2/x.gif'/></span> </div>
 <div class="sep legal">
 <div class="copyright">
 © 2015 TripAdvisor LLC All rights reserved. TripAdvisor <a href="/pages/terms.html">Terms of Use</a> and <a href="/pages/privacy.html">Privacy Policy</a>.
@@ -8023,18 +8129,18 @@ var wiFriHasMember =  false  ;
 var gIS_US = true;
 var gHomeAirport = "BOS";
 var gAirportFromPageLoc = "BOS";
-var JS_SECURITY_TOKEN = "AAABTJDYEg1G2Sl9ElSbUwI8YFVoREaCXQrDEg==";
+var JS_SECURITY_TOKEN = "AAABTJHBHwn2J9yZgpGgEzH/ljLqhGii9NqTeg==";
 var addOverlayCloseClass = "";
 var isOverlayServlet = "";
 var IS_OVERLAY_DEBUG = "false";
 var IS_MTPU_ENABLED = true;
-var MTPU_RULE = 611;
+var MTPU_RULE = 610;
 var cpu_enabled = true;
 </script>
 <script type="text/javascript">
 var freshVSTrackingCookie = true;         </script>
 <script type='text/javascript' crossorigin='anonymous' src='http://e2.tacdn.com/js3/hotels-c-v21736418741a.js'></script>
-<script type="text/javascript">var taSecureToken = "AAABTJDYEg1G2Sl9ElSbUwI8YFVoREaCXQrDEg==";</script>
+<script type="text/javascript">var taSecureToken = "AAABTJHBHwn2J9yZgpGgEzH/ljLqhGii9NqTeg==";</script>
 <script type="text/javascript">
 if(window.ta && ta.store) {
 ta.store('photo.viewer.localization.videoError', 'We\'re sorry, video player could not load');     }
@@ -8043,7 +8149,7 @@ ta.store('photo.viewer.localization.videoError', 'We\'re sorry, video player cou
 var geoParam = "&geo=60745";
 </script>
 <script type="text/javascript" src='http://e2.tacdn.com/js3/src/ta/commerce/PersistentDatePicker-v21153299926a.js' crossorigin='anonymous'></script>
-<!-- web604a.a.tripadvisor.com -->
+<!-- web176a.a.tripadvisor.com -->
 <!-- PRODUCTION -->
 <!-- PRODUCTION -->
 <script type='text/javascript'> ta.store('flag_flyout_link_fixing.featureEnabled', 'false'); </script><script>ta.common.header.createNavMenu(ta.find('.warLink'), { initFn: function() { ta.run('ta.overlays.Factory.createWARToDoListOverlay'); }});</script><script>ta.common.header.createNavMenu(ta.select('.jsNavMenu'));</script><script type='text/javascript'>
@@ -8177,7 +8283,7 @@ map.click();
 (function() { ta.store('ta.p13n.showUnavailable', false); })();
 (function() { ta.store('ta.p13n.showFriendSort', false); })();
 ta.store('ta.p13n.filterOnHover', true);
-</script><script type='text/javascript'>ta.store('ta.p13n.priceFilterWithCalendar.isEnabled', true);</script><script type='text/javascript'>ta.store('mapsv2.search', true);</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.atdmt.com/i/img;p=11007200799203;cache=?ord=1428359221806');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.doubleclick.net/ad/N4764.TripAdvisor/B7050081.4;sz=1x1?ord=1428359221806');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.doubleclick.net/ad/N884.TripAdvisor1/B8548389.115502591;sz=1x1;?ord=1428359221806');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//choice.demdex.net/event?d_event=imp&d_adgroup=115503137&d_placement=115502591&d_site=370125&d_campaign=8548389&ord=1428359221806');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.doubleclick.net/ad/N4764.TripAdvisor/B8559819.115639327;sz=1x1?ord=1428359221806');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.doubleclick.net/ad/N884.TripAdvisor1/B8548389.115503144;sz=1x1;?ord=1428359221806');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//choice.demdex.net/event?d_event=imp&d_adgroup=115503137&d_placement=115503144&d_site=370125&d_campaign=8548389&ord=1428359221806');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.doubleclick.net/ad/N4764.TripAdvisor/B8559819.115631984;sz=1x1?ord=1428359221806');}, 'storeTrackPixleSrc' );</script>
+</script><script type='text/javascript'>ta.store('ta.p13n.priceFilterWithCalendar.isEnabled', true);</script><script type='text/javascript'>ta.store('mapsv2.search', true);</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.atdmt.com/i/img;p=11007200799203;cache=?ord=1428374495020');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.doubleclick.net/ad/N4764.TripAdvisor/B7050081.4;sz=1x1?ord=1428374495020');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.doubleclick.net/ad/N884.TripAdvisor1/B8548389.115502591;sz=1x1;?ord=1428374495020');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//choice.demdex.net/event?d_event=imp&d_adgroup=115503137&d_placement=115502591&d_site=370125&d_campaign=8548389&ord=1428374495020');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.doubleclick.net/ad/N4764.TripAdvisor/B8559819.115639327;sz=1x1?ord=1428374495020');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.doubleclick.net/ad/N884.TripAdvisor1/B8548389.115503144;sz=1x1;?ord=1428374495020');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//choice.demdex.net/event?d_event=imp&d_adgroup=115503137&d_placement=115503144&d_site=370125&d_campaign=8548389&ord=1428374495020');}, 'storeTrackPixleSrc' );</script><script type='text/javascript'>ta.queueForLoad(function () {ta.maps.trackpixel.storeTrackPixleSrc('//ad.doubleclick.net/ad/N4764.TripAdvisor/B8559819.115631984;sz=1x1?ord=1428374495020');}, 'storeTrackPixleSrc' );</script>
 <script type="text/javascript">
 window.mapDivId = 'map0Div';
 window.map0Div = {
@@ -8219,6 +8325,8 @@ ta.run("ta.mapsv2.Factory.handleHashLocation", {}, false);
 });
 }
 window.addEvent('load', function(evt) { if (window.location.hash == "#MAPVIEW") { ta.run("ta.mapsv2.Factory.handleHashLocation", {}, true); } });
+ta.store('sponsor.name','BEST_WESTERN');
+ta.store('sponsor.shortName','bstWst');
 ta.store("iframe_popup_config_map_usability_survey",
 {
 isEnabled : false,
@@ -8686,28 +8794,30 @@ ta.store('maps.zoom', 12);
 ta.store('maps.latitude', 42.357277);
 ta.store('maps.longitude', -71.05834);
 var newlazyImgs = [
-{"id":"lazyload_-575606663_0","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/generic/site/pencil.png"}
-,   {"id":"lazyload_-575606663_1","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/03/3b/1d/f0/envision-hotel-boston.jpg"}
-,   {"id":"lazyload_-575606663_2","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/05/68/8e/9b/the-fairmont-copley-plaza.jpg"}
-,   {"id":"lazyload_-575606663_3","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/05/d2/c6/70/a-one-bedroom-suite.jpg"}
-,   {"id":"lazyload_-575606663_4","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/maps/icons/spinner24.gif"}
-,   {"id":"lazyload_-575606663_5","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/07/7f/11/69/executive-double-bed.jpg"}
-,   {"id":"lazyload_-575606663_6","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-s/03/88/a0/d4/exterior-view.jpg"}
-,   {"id":"lazyload_-575606663_7","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/75/f6/lobby.jpg"}
-,   {"id":"lazyload_-575606663_8","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fd/f4/fe/indoor-pool-whirlpool.jpg"}
-,   {"id":"lazyload_-575606663_9","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/01/9f/36/4a/a-quiet-residential-street.jpg"}
-,   {"id":"lazyload_-575606663_10","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/04/d1/f3/2e/residence-inn-boston.jpg"}
-,   {"id":"lazyload_-575606663_11","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/07/7a/9f/15/exterior.jpg"}
-,   {"id":"lazyload_-575606663_12","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/56/db/56db780bec325e44415ebd06a34e74745large.jpg"}
-,   {"id":"lazyload_-575606663_13","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/14/6e/guest-room.jpg"}
-,   {"id":"lazyload_-575606663_14","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/2b/65/guest-room.jpg"}
-,   {"id":"lazyload_-575606663_15","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/05/dd/48/fa/courtyard-boston-downtown.jpg"}
-,   {"id":"lazyload_-575606663_16","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/10/81/boston-park-plaza.jpg"}
-,   {"id":"lazyload_-575606663_17","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/b2/6b/b26bff5785ec6665f71c8f205ada69775large.jpg"}
-,   {"id":"lazyload_-575606663_18","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/02/d4/e0/f6/milner-hotel.jpg"}
-,   {"id":"lazyload_-575606663_19","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/87/51/8751d06c9b5c4a4f3bb37b0c5ebf4d217large.jpg"}
-,   {"id":"lazyload_-575606663_20","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/2a/46/87/standard-king-bed-room.jpg"}
-,   {"id":"lazyload_-575606663_21","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/02/44/a4/62/exterior-view.jpg"}
+{"id":"lazyload_162788109_0","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/generic/site/pencil.png"}
+,   {"id":"lazyload_162788109_1","tagType":"img","scroll":false,"priority":1000,"logerror":false,"data":"//ad.atdmt.com/i/img;p=11007200799198;cache=?ord=1428374495006"}
+,   {"id":"lazyload_162788109_2","tagType":"img","scroll":false,"priority":1000,"logerror":false,"data":"//ad.doubleclick.net/ad/N4764.TripAdvisor/B7050081;sz=1x1?ord=1428374495006"}
+,   {"id":"lazyload_162788109_3","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/03/3b/1d/f0/envision-hotel-boston.jpg"}
+,   {"id":"lazyload_162788109_4","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/05/68/8e/9b/the-fairmont-copley-plaza.jpg"}
+,   {"id":"lazyload_162788109_5","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/05/68/89/29/aisling-bed-and-breakfast.jpg"}
+,   {"id":"lazyload_162788109_6","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/maps/icons/spinner24.gif"}
+,   {"id":"lazyload_162788109_7","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-s/07/7f/11/69/executive-double-bed.jpg"}
+,   {"id":"lazyload_162788109_8","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-s/03/88/a0/d4/exterior-view.jpg"}
+,   {"id":"lazyload_162788109_9","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/75/f6/lobby.jpg"}
+,   {"id":"lazyload_162788109_10","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fd/f4/fe/indoor-pool-whirlpool.jpg"}
+,   {"id":"lazyload_162788109_11","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/01/9f/36/4a/a-quiet-residential-street.jpg"}
+,   {"id":"lazyload_162788109_12","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/04/d1/f3/2e/residence-inn-boston.jpg"}
+,   {"id":"lazyload_162788109_13","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/07/7a/9f/15/exterior.jpg"}
+,   {"id":"lazyload_162788109_14","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/56/db/56db780bec325e44415ebd06a34e74745large.jpg"}
+,   {"id":"lazyload_162788109_15","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/14/6e/guest-room.jpg"}
+,   {"id":"lazyload_162788109_16","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/2b/65/guest-room.jpg"}
+,   {"id":"lazyload_162788109_17","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/05/dd/48/fa/courtyard-boston-downtown.jpg"}
+,   {"id":"lazyload_162788109_18","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/10/81/boston-park-plaza.jpg"}
+,   {"id":"lazyload_162788109_19","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/b2/6b/b26bff5785ec6665f71c8f205ada69775large.jpg"}
+,   {"id":"lazyload_162788109_20","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/02/d4/e0/f6/milner-hotel.jpg"}
+,   {"id":"lazyload_162788109_21","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/87/51/8751d06c9b5c4a4f3bb37b0c5ebf4d217large.jpg"}
+,   {"id":"lazyload_162788109_22","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/2a/46/87/standard-king-bed-room.jpg"}
+,   {"id":"lazyload_162788109_23","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/02/44/a4/62/exterior-view.jpg"}
 ]
 var  newlazyHtml = [
 ]
@@ -8729,6 +8839,8 @@ ta.store('maps.latitude', 42.357277);
 ta.store('maps.longitude', -71.05834);
 ta.store('maps.zoom', 12);
 ta.store('maps.staticUrl', '' );
+ta.store('sponsor.id', '2');
+ta.store('sponsor.active', 'BEST_WESTERN');
 ta.store('maps.options', {
 homeIcon: false,
 onMorph: function(idx,map) { ta.servlet.HACSearch.mapMorphed(idx,map); },
@@ -8822,7 +8934,7 @@ ta.store('ta.hac.locationTimezoneOffset', -14400000);
 </script>
 <script type="text/javascript">
 ta.queueForReady( function() {
-ta.localStorage && ta.localStorage.updateSessionId('3D646D7EF7C0036D5CCDCC63C49489F0');
+ta.localStorage && ta.localStorage.updateSessionId('64377B754CB4F2E1B489C5A4BA6D1F5D');
 }, 1, "reset localStorage session id");
 </script>
 <script type='text/javascript'>
@@ -8912,7 +9024,7 @@ ta.store('multiDP.checkIn', "Check In");           ta.store('multiDP.checkOut', 
 (function(window,ta,undefined){
 try {
 ta = window.ta = window.ta || {};
-ta.uid = 'VSMINQokLhgAADzGP0wAAAAl';
+ta.uid = 'VSND3gokHkYAAHqbJZIAAAAK';
 ta.userLoggedIn = false;
 ta.userSecurelyLoggedIn = false;
 if (ta.prerender && ta.prerender._init){
@@ -8933,17 +9045,17 @@ _gaq.push(['_setCustomVar',3,'EntryGeo','Boston-60745',3]);
 _gaq.push(['_setCustomVar',4,'EntryCountry','United States-191',3]);
 _gaq.push(['_setCustomVar',5,'EntryServlet','PageNotFound',3]);
 _gaq.push(['_setCustomVar',6,'Pool','A',3]);
-_gaq.push(['_setCustomVar',7,'Slice','2613',3]);
+_gaq.push(['_setCustomVar',7,'Slice','2513',3]);
 _gaq.push(['_setCustomVar',18,'MCID','TripAdvisor-0',3]);
 _gaq.push(['_setCustomVar',21,'PageType','Desktop Page',3]);
 _gaq.push(['_setCustomVar',22,'DeviceType','Desktop',3]);
 _gaq.push(['_setCustomVar',23,'IPGeo','Boston-60745',3]);
 _gaq.push(['_setCustomVar',24,'ProductType','Browser',3]);
-_gaq.push(['_setCustomVar',48,'WebServer','web604a',3]);
-pageData=ta.analytics._JSON_parse('{\"cv\":[[\"_deleteCustomVar\",1],[\"_deleteCustomVar\",47],[\"_setCustomVar\",12,\"Country\",\"United States-191\",3],[\"_setCustomVar\",25,\"Continent\",\"North America-19\",3],[\"_setCustomVar\",13,\"Geo\",\"Boston-60745\",3],[\"_setCustomVar\",20,\"PP\",\"-39-279-276-251-396-129-253-401-171-280-180-274-224-\",3],[\"_deleteCustomVar\",11],[\"_deleteCustomVar\",19],[\"_deleteCustomVar\",14],[\"_deleteCustomVar\",8],[\"_deleteCustomVar\",10]],\"url\":\"/Hotels\"}');
+_gaq.push(['_setCustomVar',48,'WebServer','web176a',3]);
+pageData=ta.analytics._JSON_parse('{\"cv\":[[\"_deleteCustomVar\",1],[\"_deleteCustomVar\",47],[\"_setCustomVar\",12,\"Country\",\"United States-191\",3],[\"_setCustomVar\",25,\"Continent\",\"North America-19\",3],[\"_setCustomVar\",13,\"Geo\",\"Boston-60745\",3],[\"_setCustomVar\",20,\"PP\",\"-39-279-251-396-129-253-401-171-280-180-274-224-\",3],[\"_setCustomVar\",26,\"Promos\",\"-RBC_VR_Relax-\",3],[\"_deleteCustomVar\",11],[\"_deleteCustomVar\",19],[\"_deleteCustomVar\",14],[\"_deleteCustomVar\",8],[\"_deleteCustomVar\",10]],\"url\":\"/Hotels\"}');
 pageDataStack.push(pageData);
 if(ta.keep){
-ta.keep("partials.pageProperties","39-279-276-251-396-129-253-401-171-280-180-274-224");
+ta.keep("partials.pageProperties","39-279-251-396-129-253-401-171-280-180-274-224");
 }
 if(ta.store){
 ta.store("gaMemberState","-");
@@ -8967,49 +9079,51 @@ ta.util.error.record(e,'global_ga.vm');
 </script>
 <script type="text/javascript">
 var lazyImgs = [
-{"id":"lazyload_-575606663_0","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/generic/site/pencil.png"}
-,   {"id":"lazyload_-575606663_1","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/03/3b/1d/f0/envision-hotel-boston.jpg"}
-,   {"id":"lazyload_-575606663_2","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/05/68/8e/9b/the-fairmont-copley-plaza.jpg"}
-,   {"id":"lazyload_-575606663_3","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/05/d2/c6/70/a-one-bedroom-suite.jpg"}
-,   {"id":"lazyload_-575606663_4","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/maps/icons/spinner24.gif"}
-,   {"id":"lazyload_-575606663_5","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/07/7f/11/69/executive-double-bed.jpg"}
-,   {"id":"lazyload_-575606663_6","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-s/03/88/a0/d4/exterior-view.jpg"}
-,   {"id":"lazyload_-575606663_7","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/75/f6/lobby.jpg"}
-,   {"id":"lazyload_-575606663_8","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fd/f4/fe/indoor-pool-whirlpool.jpg"}
-,   {"id":"lazyload_-575606663_9","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/01/9f/36/4a/a-quiet-residential-street.jpg"}
-,   {"id":"lazyload_-575606663_10","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/04/d1/f3/2e/residence-inn-boston.jpg"}
-,   {"id":"lazyload_-575606663_11","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/07/7a/9f/15/exterior.jpg"}
-,   {"id":"lazyload_-575606663_12","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/56/db/56db780bec325e44415ebd06a34e74745large.jpg"}
-,   {"id":"lazyload_-575606663_13","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/14/6e/guest-room.jpg"}
-,   {"id":"lazyload_-575606663_14","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/2b/65/guest-room.jpg"}
-,   {"id":"lazyload_-575606663_15","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/05/dd/48/fa/courtyard-boston-downtown.jpg"}
-,   {"id":"lazyload_-575606663_16","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/10/81/boston-park-plaza.jpg"}
-,   {"id":"lazyload_-575606663_17","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/b2/6b/b26bff5785ec6665f71c8f205ada69775large.jpg"}
-,   {"id":"lazyload_-575606663_18","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/02/d4/e0/f6/milner-hotel.jpg"}
-,   {"id":"lazyload_-575606663_19","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/87/51/8751d06c9b5c4a4f3bb37b0c5ebf4d217large.jpg"}
-,   {"id":"lazyload_-575606663_20","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/2a/46/87/standard-king-bed-room.jpg"}
-,   {"id":"lazyload_-575606663_21","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/02/44/a4/62/exterior-view.jpg"}
-,   {"id":"lazyload_-575606663_22","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/06/29/f4/97/hotel-exterior.jpg"}
-,   {"id":"lazyload_-575606663_23","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/07/7a/aa/1b/front-desk.jpg"}
-,   {"id":"lazyload_-575606663_24","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/06/fe/10/81/boston-park-plaza.jpg"}
-,   {"id":"lazyload_-575606663_25","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/06/fe/73/7e/meeting-room.jpg"}
-,   {"id":"lazyload_-575606663_26","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/02/a2/2d/cf/filename-lobby-jpg-thumbnail0.jpg"}
-,   {"id":"lazyload_-575606663_27","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/06/fe/01/59/presidential-suite-bedroom.jpg"}
-,   {"id":"lazyload_-575606663_28","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/06/fd/fc/65/king-suite-guest-room.jpg"}
-,   {"id":"lazyload_-575606663_29","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/01/04/9d/c6/the-john-jeffries-house.jpg"}
-,   {"id":"lazyload_-575606663_30","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/01/9b/03/af/hotel-guest-room.jpg"}
-,   {"id":"lazyload_-575606663_31","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/03/88/a0/d4/exterior-view.jpg"}
-,   {"id":"lazyload_-575606663_32","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/01/cd/61/ce/harborside-inn.jpg"}
-,   {"id":"lazyload_-575606663_33","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/06/29/f4/79/corner-king.jpg"}
-,   {"id":"lazyload_-575606663_34","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/30/b6/30b67bf2d1e98229584f5f12ef4c6e9d9.jpg"}
-,   {"id":"lazyload_-575606663_35","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/b2/6b/b26bff5785ec6665f71c8f205ada69775.jpg"}
-,   {"id":"lazyload_-575606663_36","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/05/bb/c1/99/boston-yacht-haven-inn.jpg"}
-,   {"id":"lazyload_-575606663_37","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/04/94/e0/00/the-gilded-lily.jpg"}
-,   {"id":"lazyload_-575606663_38","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/03/e7/69/8e/caj-guest-house-worcester.jpg"}
-,   {"id":"lazyload_-575606663_39","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/40/f6/40f67a2c37881a7340af15973c8b672a4.jpg"}
-,   {"id":"lazyload_-575606663_40","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/branding/identityFOOT_2014.png"}
-,   {"id":"lazyload_-575606663_41","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/icons/bell.png"}
-,   {"id":"p13n_tp_stm","tagType":"img","scroll":false,"priority":1000,"logerror":false,"data":"http://p.smartertravel.com/ext/pixel/ta/seed.gif?id=NY1QkB0y0N6_QpZghp4RC22bjN8pBrehyJyyEQ3An9zIVaiLTUeeKEb2qPLoi1Cp"}
+{"id":"lazyload_162788109_0","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/generic/site/pencil.png"}
+,   {"id":"lazyload_162788109_1","tagType":"img","scroll":false,"priority":1000,"logerror":false,"data":"//ad.atdmt.com/i/img;p=11007200799198;cache=?ord=1428374495006"}
+,   {"id":"lazyload_162788109_2","tagType":"img","scroll":false,"priority":1000,"logerror":false,"data":"//ad.doubleclick.net/ad/N4764.TripAdvisor/B7050081;sz=1x1?ord=1428374495006"}
+,   {"id":"lazyload_162788109_3","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/03/3b/1d/f0/envision-hotel-boston.jpg"}
+,   {"id":"lazyload_162788109_4","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/05/68/8e/9b/the-fairmont-copley-plaza.jpg"}
+,   {"id":"lazyload_162788109_5","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-t/05/68/89/29/aisling-bed-and-breakfast.jpg"}
+,   {"id":"lazyload_162788109_6","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/maps/icons/spinner24.gif"}
+,   {"id":"lazyload_162788109_7","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-s/07/7f/11/69/executive-double-bed.jpg"}
+,   {"id":"lazyload_162788109_8","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-s/03/88/a0/d4/exterior-view.jpg"}
+,   {"id":"lazyload_162788109_9","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/75/f6/lobby.jpg"}
+,   {"id":"lazyload_162788109_10","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fd/f4/fe/indoor-pool-whirlpool.jpg"}
+,   {"id":"lazyload_162788109_11","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/01/9f/36/4a/a-quiet-residential-street.jpg"}
+,   {"id":"lazyload_162788109_12","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/04/d1/f3/2e/residence-inn-boston.jpg"}
+,   {"id":"lazyload_162788109_13","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/07/7a/9f/15/exterior.jpg"}
+,   {"id":"lazyload_162788109_14","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/56/db/56db780bec325e44415ebd06a34e74745large.jpg"}
+,   {"id":"lazyload_162788109_15","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/14/6e/guest-room.jpg"}
+,   {"id":"lazyload_162788109_16","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/2b/65/guest-room.jpg"}
+,   {"id":"lazyload_162788109_17","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/05/dd/48/fa/courtyard-boston-downtown.jpg"}
+,   {"id":"lazyload_162788109_18","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/fe/10/81/boston-park-plaza.jpg"}
+,   {"id":"lazyload_162788109_19","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/b2/6b/b26bff5785ec6665f71c8f205ada69775large.jpg"}
+,   {"id":"lazyload_162788109_20","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/02/d4/e0/f6/milner-hotel.jpg"}
+,   {"id":"lazyload_162788109_21","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/87/51/8751d06c9b5c4a4f3bb37b0c5ebf4d217large.jpg"}
+,   {"id":"lazyload_162788109_22","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/06/2a/46/87/standard-king-bed-room.jpg"}
+,   {"id":"lazyload_162788109_23","tagType":"img","scroll":false,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/02/44/a4/62/exterior-view.jpg"}
+,   {"id":"lazyload_162788109_24","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/05/bd/b7/32/exterior-water-view.jpg"}
+,   {"id":"lazyload_162788109_25","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/06/fe/73/7e/meeting-room.jpg"}
+,   {"id":"lazyload_162788109_26","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-f/02/49/3f/97/the-seaport-hotel-on.jpg"}
+,   {"id":"lazyload_162788109_27","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/06/fe/73/7e/meeting-room.jpg"}
+,   {"id":"lazyload_162788109_28","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/02/a2/2d/cf/filename-lobby-jpg-thumbnail0.jpg"}
+,   {"id":"lazyload_162788109_29","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/06/fe/01/59/presidential-suite-bedroom.jpg"}
+,   {"id":"lazyload_162788109_30","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/06/fd/fc/65/king-suite-guest-room.jpg"}
+,   {"id":"lazyload_162788109_31","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/01/04/9d/c6/the-john-jeffries-house.jpg"}
+,   {"id":"lazyload_162788109_32","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/01/9b/03/af/hotel-guest-room.jpg"}
+,   {"id":"lazyload_162788109_33","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/03/88/a0/d4/exterior-view.jpg"}
+,   {"id":"lazyload_162788109_34","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/01/cd/61/ce/harborside-inn.jpg"}
+,   {"id":"lazyload_162788109_35","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/06/29/f4/79/corner-king.jpg"}
+,   {"id":"lazyload_162788109_36","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/30/b6/30b67bf2d1e98229584f5f12ef4c6e9d9.jpg"}
+,   {"id":"lazyload_162788109_37","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/b2/6b/b26bff5785ec6665f71c8f205ada69775.jpg"}
+,   {"id":"lazyload_162788109_38","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/05/bb/c1/99/boston-yacht-haven-inn.jpg"}
+,   {"id":"lazyload_162788109_39","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/04/94/e0/00/the-gilded-lily.jpg"}
+,   {"id":"lazyload_162788109_40","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/photo-l/03/e7/69/8e/caj-guest-house-worcester.jpg"}
+,   {"id":"lazyload_162788109_41","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://media-cdn.tripadvisor.com/media/ProviderThumbnails/dirs/40/f6/40f67a2c37881a7340af15973c8b672a4.jpg"}
+,   {"id":"lazyload_162788109_42","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/branding/identityFOOT_2014.png"}
+,   {"id":"lazyload_162788109_43","tagType":"img","scroll":true,"priority":100,"logerror":false,"data":"http://e2.tacdn.com/img2/icons/bell.png"}
+,   {"id":"p13n_tp_stm","tagType":"img","scroll":false,"priority":1000,"logerror":false,"data":"http://p.smartertravel.com/ext/pixel/ta/seed.gif?id=NY1QkB0y0N5heRJ9vTAg6xlkyCgjxNmctk_tOJYCUv_SEqZxenvnsNcUJcFawsVc"}
 ];
 var lazyHtml = [
 ];
@@ -9018,7 +9132,7 @@ window.setupLazyLoad();
 }, 'lazy load images');
 </script>
 <script type="text/javascript">
-ta.store('abMarkerSet', 't1287_t4b_phone_tracking');
+ta.store('abMarkerSet', '');
 ta.keep('startOffset', '61');
 <!-- currentGeoId = 60745 -->
 function build_ad() {
@@ -9048,7 +9162,7 @@ ta.store('facebook.disableLogin', false);
 ta.store('facebook.apiKey', "f1e687a58f0cdac60b7af2317a5febb3");
 ta.store('facebook.appId', "162729813767876");
 ta.store('facebook.appName', "tripadvisor");
-ta.store('facebook.taServerTime', "1428359221");
+ta.store('facebook.taServerTime', "1428374494");
 ta.store('facebook.skip.session.check',"false");
 ta.store('facebook.apiVersion', "v1.0");
 ta.store("facebook.invalidFBCreds", true);
@@ -9091,7 +9205,7 @@ googletag.cmd=googletag.cmd||[];
 ta.queueForLoad(
 function() {
 ta.store('ads.pageTargeting', {
-"sess": "3D646D7EF7C0036D5CCDCC63C49489F0",
+"sess": "64377B754CB4F2E1B489C5A4BA6D1F5D",
 "PageType": "Hotels",
 "pool": "A",
 "country": "191",
@@ -9099,25 +9213,25 @@ ta.store('ads.pageTargeting', {
 "detail": "0",
 "rd": "com",
 "hname": "Boston",
-"slice": "shared_32",
+"slice": "single_22",
 "drs": [
-"MOB_7",
-"FL_6",
-"ABC_7",
-"CMN_2",
-"REV_5",
-"SALES_7"
+"MOB_8",
+"FL_4",
+"ABC_5",
+"CMN_0",
+"REV_6",
+"SALES_2"
 ],
 "report": [
-"desktop_Hotels_shared_32",
+"desktop_Hotels_single_22",
 "desktop_Hotels_WIN_SIZE",
 "desktop_com_a",
-"desktop_Hotels_MOB_7",
-"desktop_Hotels_FL_6",
-"desktop_Hotels_ABC_7",
-"desktop_Hotels_CMN_2",
-"desktop_Hotels_REV_5",
-"desktop_Hotels_SALES_7"
+"desktop_Hotels_MOB_8",
+"desktop_Hotels_FL_4",
+"desktop_Hotels_ABC_5",
+"desktop_Hotels_CMN_0",
+"desktop_Hotels_REV_6",
+"desktop_Hotels_SALES_2"
 ],
 "platform": "desktop"
 });
@@ -9132,7 +9246,11 @@ var adStubsJSON = {
 ]
 ],
 "tgt": "gpt-ad-160x600",
-"type": "skyscraper_top"
+"type": "skyscraper_top",
+"custom_targeting": {
+"kw": "bstWst",
+"disable_event_refresh": true
+}
 },
 {
 "base": "/5349/ta.ta.com.s/na.us.ma.boston",
@@ -9201,7 +9319,11 @@ var adStubsJSON = {
 ]
 ],
 "tgt": "gpt-ad-160x600",
-"type": "skyscraper_top"
+"type": "skyscraper_top",
+"custom_targeting": {
+"kw": "bstWst",
+"disable_event_refresh": true
+}
 },
 {
 "base": "/5349/ta.ta.com.s/na.us.ma.boston",
@@ -9309,7 +9431,6 @@ var privateMsgCSS = "http://e2.tacdn.com/css2/modules/private_messaging-v2503127
 var recentViewedCSS = "http://e2.tacdn.com/css2/common/recently_viewed-v2628695694a.css";
 var checkRatesLBCss = "http://e2.tacdn.com/css2/check_rates_lb-v23855129377a.css";
 var jfyOverlayCss = "http://e2.tacdn.com/css2/p13n/jfy_onboarding.css";
-ta.queueForReady(function() { new Asset.css("http://e2.tacdn.com/css2/overlays/guests_rooms_overlay-v23242176611a.css")});
 var floatingMapCSS = "http://e2.tacdn.com/css2/modules/floating_map-v22419345840a.css";
 var t4bSlideshowCSS = "http://e2.tacdn.com/css2/modules/t4b_slideshow-v24112077699a.css";
 var hotelsMapCSS = "http://e2.tacdn.com/css2/pages/hotels_map-v23393657429a.css";
@@ -9378,7 +9499,7 @@ ta.common.dmp.store.setActiveDMP( ta.common.dmp.bluekai);
 else if (ta && ta.util && ta.util.error && ta.util.error.record) {
 ta.util.error.record.apply(this, [null, "DMP JavaScript not found"]);
 }
-ta.common.dmp.store.storeValue("taUUID", "ubKy5POU3xR9HioQsdse5Y4ZMt0unWhC0tRKrV8/9es2jHwltRJPGQ==");
+ta.common.dmp.store.storeValue("taUUID", "VSNAdLqI0j1J55e9XmoMlAI7phhUrxeJzEoe6xTTMi0=");
 ta.common.dmp.store.setBehaviors({
 "ServletName" : [
 "Hotels"
@@ -9490,7 +9611,7 @@ ta.common.ads.remarketingOptions = ta.common.ads.remarketingOptions || {};
 (function() {
 var store = function(key, val) { ta.common.ads.remarketingOptions[key] = val; };
 store('pixelServlet', 'PageMoniker');
-store('pixelList', "nanigans_fb_dr_clickout_pixel,choicestream_clickout_pixel,nanigans_fb_dr_pixel,yahoo_pixel,facebook_dr_pixel,criteo_pixel,yahoo_clickout_pixel,facebook_wca_pixel,choicestream_id_pixel,google_clickout_pixel,nanigans_fbx_pixel,triggit_fbx_clickout_pixel,google_pixel,twitter_pixel,clicktripz_clickout_pixel,choicestream_seg_pixel,choicestream_pixel_2,nanigans_fbx_clickout_pixel,triggit_fbx_pixel,ignition_one_pixel");
+store('pixelList', "clicktripz_clickout_pixel,choicestream_clickout_pixel,google_clickout_pixel,choicestream_pixel_2,nanigans_fbx_clickout_pixel,facebook_wca_pixel,nanigans_fb_dr_pixel,google_pixel,nanigans_fb_dr_clickout_pixel,yahoo_pixel,triggit_fbx_clickout_pixel,triggit_fbx_pixel,criteo_pixel,twitter_pixel,yahoo_clickout_pixel,facebook_dr_pixel,choicestream_id_pixel,choicestream_seg_pixel,ignition_one_pixel,nanigans_fbx_pixel");
 store('pixelsEnabled', true);
 store('clickoutPixelsEnabled', true);
 store('pixelContext', {
@@ -9499,7 +9620,7 @@ curLocId: "60745",
 locIds: "1138709, 1513541, 222955, 94363, 1159285, 4232689, 555224, 220216, 222958",
 blTabIdx: "",
 servlet: "Hotels",
-userUnique: "882d9f8d6674b0ac6b64313c536a6d7c8d2b4d95"
+userUnique: "ca22b1898a3ce56de70f85d6a6dcfc9b86e196b1"
 });
 var delayedLoadFunc = function() {
 setTimeout(function() {
@@ -9549,22 +9670,6 @@ ta.common.header.getWARNotificationFlag();
 }, 'load notification flag if needed');
 </script>
 <script type="text/javascript">
-ta.store('guests_rooms_picker.enabled', true);
-ta.store('guests_rooms_picker_3.enabled', true);
-ta.queueForLoad(function() {
-ta.widgets.calendar.updateGuestsRoomsPickerDataFromCookie();
-ta.widgets.calendar.updateGuestsRoomsPickerUI();
-});
-</script>
-<script type="text/javascript">
-ta.store('singular_room_da', 'room');
-ta.store('plural_rooms_da', 'rooms');
-ta.store('singular_guest_da', 'guest');
-ta.store('plural_guests_da', 'guests');
-ta.store('rooms_guests_picker_update_da', 'Update');
-ta.store("best_prices_with_dates_21f3", 'Best prices for \074span class=\"dateHeader inDate\"\076checkIn\074/span\076 - \074span class=\"dateHeader outDate\"\076checkOut\074/span\076');
-</script>
-<script type="text/javascript">
 window.addEvent("blur", function() {
 if(typeof(Storage) !== "undefined") {
 localStorage.setItem("lastViewedWindowTop", window.getScroll().y);
@@ -9610,13 +9715,9 @@ ta.load('ta-hotelsChooseRoomFlyout.js');
 Asset.css('http://e2.tacdn.com/css2/src/widgets/hotels_chooseroom_flyout-v2801737541a.css');
 } );
 ta.store('ib.loading_text', "We are looking for the best rooms for you");
-ta.store('ib.loading_text_long', "Thanks for your patience. We are contacting our partners to get you the best rates.");         ta.store('ib.loading_text_very_long', "Almost there...we are finalizing room options for you.");         ta.store('ibex_performance_usability', true);
 ta.store('ib.still_want_to_stay', "Still want to stay at this hotel? You can try these booking options.");       ta.store('ib.sorry_offer_unavail', "Sorry, this offer is no longer available.");     </script>
 <script type="text/javascript">
-ta.store("ib_room_list_match_flyout", true);
-</script>
-<script type="text/javascript">
-ta.store("ib_flyout_more_rooms", true);
+ta.store("ib_full_description_lightbox_on_flyout", true);
 </script>
 <script type="text/javascript">
 ta.queueForReady (function() {
@@ -9631,7 +9732,85 @@ p13n_geo_header.setStyle('margin-left', map_cta.getSize().x);
 ta.store('screenSizeRecord', true);
 </script>
 <script type="text/javascript">
+ta.store("hotels_short_cell_drawers", true);
+</script>
+<script type="text/javascript">
 /* <![CDATA[ */
+(function(){
+var define = ta.p13n.placements.define.bind(ta.p13n.placements,'prodp13n_single_category_recs_cohort','handlers.js');
+/**
+* Private javascript for prodp13n_between_reviews_cohort placement
+*/
+define(["placement"], function(placement) {
+function trackCrossSellEvent(whereClicked, stringDetail, numericDetail) {
+ta.trackEventOnPage('prodp13n_single_category_recs_xsell', whereClicked, stringDetail, numericDetail);
+}
+//We use this instead of the ta.util.element.doIfElementIsVisible because when hac polls
+// the doIfElementIsVisible automatically fires likely because the element's position becomes 0
+// when it dissapears. Here, we instead use the first position we found and keep that regardless
+// of what happens to the actual element.
+// We add 40 to the bottom of the page to match what the xsell looks like
+function trackCrossSellWhenVisible(elmt, elmtPos, text) {
+if(!elmt || !elmtPos) {
+return;
+}
+function checkOnScroll() {
+var bottomOfPage = window.scrollY  + window.getSize().y;
+if (elmt && bottomOfPage + 40 >= elmtPos) {
+trackCrossSellEvent(text, 'cohort');
+window.removeEvent('scroll', checkOnScroll);
+window.removeEvent('resize', checkOnResize);
+}
+}
+function checkOnResize() {
+var bottomOfPage = window.scrollY  + window.getSize().y;
+if (elmt && bottomOfPage + 40 >= elmtPos) {
+trackCrossSellEvent(text, 'cohort');
+window.removeEvent('scroll', checkOnScroll);
+window.removeEvent('resize', checkOnResize);
+}
+}
+var bottomOfPage = window.scrollY  + window.getSize().y;
+if (elmt && bottomOfPage + 40 >= elmtPos) {
+trackCrossSellEvent(text, 'cohort');
+} else {
+window.addEvent('scroll', checkOnScroll);
+window.addEvent('resize', checkOnResize);
+}
+}
+var listings = ta.select('.listing');
+if(listings && listings.length > 3) {
+var fourthListing = listings[3];
+try {
+var fourthListingRect = fourthListing.getBoundingClientRect();
+if (fourthListingRect) {
+fourthListingTop = fourthListingRect.top;
+fourthListingBottom = fourthListingRect.bottom;
+trackCrossSellWhenVisible(fourthListing, fourthListingTop, 'inView');
+trackCrossSellWhenVisible(fourthListing, fourthListingBottom, 'fullyInView');
+}
+} catch (e) {
+// Do nothing.
+}
+}
+ta.queueForLoad( function() {
+var cohortLoaded = ta.id('prodp13n_single_category_recs_cohort');
+if(cohortLoaded) {
+var crossSellAttributeData = '';
+if(cohortLoaded && cohortLoaded.hasAttribute('data-categorySpecifier')) {
+crossSellAttributeData = cohortLoaded.getAttribute('data-categorySpecifier');
+}
+trackCrossSellEvent('is_loaded', 'cohort|' + crossSellAttributeData);
+if(cohortLoaded.hasClass('wouldHaveSlide')) {
+trackCrossSellEvent('is_loaded_slider', 'cohort|' + crossSellAttributeData);
+}
+}
+});
+// Return public methods.
+return {
+};
+});})();
+ta.plc_prodp13n_single_category_recs_cohort_0_handlers = ta.p13n.placements.load('prodp13n_single_category_recs_cohort','handlers.js', { 'name': 'prodp13n_single_category_recs_cohort', 'occurrence': 0, 'id': 'taplc_prodp13n_single_category_recs_cohort_0', 'location_id': 60745, 'servletClass': 'com.TripResearch.servlet.accommodation.HotelsServlet'});
 (function(){
 var define = ta.p13n.placements.define.bind(ta.p13n.placements,'hotels_checkbox_filter_header','handlers.js');
 //Private javascript for hotels_checkbox_filter_header
@@ -10246,80 +10425,160 @@ listingInfoClicked: listingInfoClicked
 })();
 ta.plc_hotels_list_short_cells_0_handlers = ta.p13n.placements.load('hotels_list_short_cells','handlers.js', { 'name': 'hotels_list_short_cells', 'occurrence': 0, 'id': 'taplc_hotels_list_short_cells_0', 'location_id': 60745, 'servletClass': 'com.TripResearch.servlet.accommodation.HotelsServlet'});
 (function(){
-var define = ta.p13n.placements.define.bind(ta.p13n.placements,'prodp13n_single_category_recs_cohort','handlers.js');
+var define = ta.prwidgets.define.bind(ta.prwidgets,'hotels_tabs_drawer','handlers.js');
+/*jshint nonew: false */
+define(["widget"], function(widget) {
+var DRAWER_TIME = 200
+, _placementCache = {}
+, _heightCache = {}
+, _locationId
+, _clickHandlers = {}
+;
 /**
-* Private javascript for prodp13n_between_reviews_cohort placement
+* Loads the contents of a placement drawer by requesting it, or pulling it from cache
 */
-define(["placement"], function(placement) {
-function trackCrossSellEvent(whereClicked, stringDetail, numericDetail) {
-ta.trackEventOnPage('prodp13n_single_category_recs_xsell', whereClicked, stringDetail, numericDetail);
-}
-//We use this instead of the ta.util.element.doIfElementIsVisible because when hac polls
-// the doIfElementIsVisible automatically fires likely because the element's position becomes 0
-// when it dissapears. Here, we instead use the first position we found and keep that regardless
-// of what happens to the actual element.
-// We add 40 to the bottom of the page to match what the xsell looks like
-function trackCrossSellWhenVisible(elmt, elmtPos, text) {
-if(!elmt || !elmtPos) {
+function _loadDrawer(placementid, tab) {
+if (!placementid) {
 return;
 }
-function checkOnScroll() {
-var bottomOfPage = window.scrollY  + window.getSize().y;
-if (elmt && bottomOfPage + 40 >= elmtPos) {
-trackCrossSellEvent(text, 'cohort');
-window.removeEvent('scroll', checkOnScroll);
-window.removeEvent('resize', checkOnResize);
+if (_placementCache[placementid]) {
+// Use cached placement content, if we have it
+_openDrawer(_placementCache[placementid], _heightCache[placementid]);
+return;
 }
+if (!_getWrapper().hasClass('open_tab')) {
+_getDrawer().empty();
+_getWrapper().addClass('placement_loading');
 }
-function checkOnResize() {
-var bottomOfPage = window.scrollY  + window.getSize().y;
-if (elmt && bottomOfPage + 40 >= elmtPos) {
-trackCrossSellEvent(text, 'cohort');
-window.removeEvent('scroll', checkOnScroll);
-window.removeEvent('resize', checkOnResize);
+ta.p13n.placements.loadDynamicPlacement(placementid, function(content) {
+_placementCache[placementid] = content;
+_heightCache[placementid] = _getContentHeight(content);
+// Make sure we still actually want to open the drawer
+if (tab.hasClass('selected_tab')) {
+_openDrawer(content, _heightCache[placementid]);
 }
-}
-var bottomOfPage = window.scrollY  + window.getSize().y;
-if (elmt && bottomOfPage + 40 >= elmtPos) {
-trackCrossSellEvent(text, 'cohort');
-} else {
-window.addEvent('scroll', checkOnScroll);
-window.addEvent('resize', checkOnResize);
-}
-}
-var listings = ta.select('.listing');
-if(listings && listings.length > 3) {
-var fourthListing = listings[3];
-try {
-var fourthListingRect = fourthListing.getBoundingClientRect();
-if (fourthListingRect) {
-fourthListingTop = fourthListingRect.top;
-fourthListingBottom = fourthListingRect.bottom;
-trackCrossSellWhenVisible(fourthListing, fourthListingTop, 'inView');
-trackCrossSellWhenVisible(fourthListing, fourthListingBottom, 'fullyInView');
-}
-} catch (e) {
-// Do nothing.
-}
-}
-ta.queueForLoad( function() {
-var cohortLoaded = ta.id('prodp13n_single_category_recs_cohort');
-if(cohortLoaded) {
-var crossSellAttributeData = '';
-if(cohortLoaded && cohortLoaded.hasAttribute('data-categorySpecifier')) {
-crossSellAttributeData = cohortLoaded.getAttribute('data-categorySpecifier');
-}
-trackCrossSellEvent('is_loaded', 'cohort|' + crossSellAttributeData);
-if(cohortLoaded.hasClass('wouldHaveSlide')) {
-trackCrossSellEvent('is_loaded_slider', 'cohort|' + crossSellAttributeData);
-}
-}
+}, {
+detail: "" + _getLocationId()
 });
-// Return public methods.
+}
+/**
+* Calculates the height of a chunk of HTML
+*/
+function _getContentHeight(content) {
+var testWrapper = document.createElement('div')
+, height
+;
+testWrapper.setAttribute('style', 'position: absolute; visibility: hidden;');
+testWrapper.innerHTML = content;
+document.body.appendChild(testWrapper);
+height = testWrapper.offsetHeight;
+// IE8 doesn't appear to calculate height properly unless you first trigger a reflow
+// So, check offsetHeight twice: Once to trigger a reflow, then once to actually get the height
+height = testWrapper.offsetHeight;
+document.body.removeChild(testWrapper);
+return height;
+}
+/**
+* Opens the drawer, populated with specified content
+*/
+function _openDrawer(content, height) {
+var drawer = widget.element.getElement('.tab_drawer')
+, wrapper = _getWrapper()
+;
+if (!drawer || !wrapper) {
+return;
+}
+_getWrapper().removeClass('placement_loading');
+height = height || _getContentHeight(content);
+height += 40; // Padding at bottom of drawer
+wrapper.addClass('open_tab');
+drawer.innerHTML = content;
+drawer.style.height = height + 'px';
+}
+/**
+* Closes the drawer
+*/
+function _closeDrawer() {
+var drawer = _getDrawer()
+, wrapper = _getWrapper()
+;
+if (!drawer || !wrapper) {
+return;
+}
+_getWrapper().removeClass('placement_loading');
+widget.element.getElements('.selected_tab').removeClass('selected_tab');
+wrapper.removeClass('open_tab').addClass('closing');
+drawer.style.height = '';
+setTimeout(function() {
+wrapper.removeClass('closing');
+}, DRAWER_TIME);
+}
+/**
+* Tab click handler delegate
+*/
+function _onTabsClick(e) {
+e = e || window.event;
+var target = e.target || e.srcElement
+, placementId
+;
+if (!target) {
+return;
+}
+if (target.nodeName !== "LI") {
+target = target.parentNode;
+}
+target = ta.id(target);
+placementId = target.getAttribute('data-placementid');
+if (target.nodeName === "LI") {
+ta.trackEventOnPage('HotelsTabsDrawer', 'click', target.getAttribute('data-trackingValue'), _getLocationId());
+if (_clickHandlers[placementId] && !_clickHandlers[placementId](target, e)) {
+return;
+}
+if (target.hasClass('selected_tab')) {
+_closeDrawer();
+} else {
+widget.element.getElements('.selected_tab').removeClass('selected_tab');
+target.addClass('selected_tab');
+_loadDrawer(placementId, target);
+}
+}
+}
+function _getLocationId() {
+var container = _getContainer();
+if (!_locationId && container) {
+_locationId = container.getAttribute('data-locationid');
+}
+return _locationId;
+}
+function _getContainer() {
+return widget.element.getElement('.tab_bar');
+}
+function _getWrapper() {
+return widget.element.getElement('.tab_drawer_wrapper');
+}
+function _getDrawer() {
+return widget.element.getElement('.tab_drawer');
+}
+/*
+* Set up placement-specific click handlers to fire before opening a drawer
+* Return false to prevent drawer from opening
+*/
+_clickHandlers["rate_details_drawer"] = function(target, event) {
+// If undated, open the datepicker instead of the Rates drawer
+if (!ta.widgets.calendar.hasPageDates()) {
+ta.call('ta.overlays.Factory.simulateDatePickerClick', event, target, _getLocationId(), false, ta.widgets.calendar.updateHLCalendar);
+return false;
+}
+return true;
+};
+/**
+* Public facade
+*/
 return {
+onTabsClick: _onTabsClick
+, onCloseClick: _closeDrawer
 };
 });})();
-ta.plc_prodp13n_single_category_recs_cohort_0_handlers = ta.p13n.placements.load('prodp13n_single_category_recs_cohort','handlers.js', { 'name': 'prodp13n_single_category_recs_cohort', 'occurrence': 0, 'id': 'taplc_prodp13n_single_category_recs_cohort_0', 'location_id': 60745, 'servletClass': 'com.TripResearch.servlet.accommodation.HotelsServlet'});
 if (ta.prwidgets) {
 ta.prwidgets.initWidgets(document);
 }
@@ -10328,6 +10587,6 @@ ta.prwidgets.initWidgets(document);
 <div id="IP_IFRAME_HOLDER"></div>
 <div id="FLASH_CHIP"></div>
 </body>
-<!-- st: 351 dc: 0 sc: 9 -->
-<!-- uid: VSMINQokLhgAADzGP0wAAAAl -->
+<!-- st: 388 dc: 0 sc: 9 -->
+<!-- uid: VSND3gokHkYAAHqbJZIAAAAK -->
 </html>
